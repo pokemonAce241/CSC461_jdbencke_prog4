@@ -20,7 +20,7 @@ function main() {
     terrain.translate.y += 100;
   
     scene.add(terrain);
-    terrain.position.setY(100);
+    //terrain.position.setY(100);
     
     camera.position.z = 5;
     
