@@ -14,9 +14,10 @@ function main() {
     renderer.setSize(window.innerWidth,window.innerHeight);
     document.body.appendChild(renderer.domElement);
     
-    var terrainGeometry = new THREE.BoxGeometry(window.innerWidth,0.1,0.5);
+    var terrainGeometry = new THREE.BoxGeometry(window.innerWidth,0.3,0.5);
     var terrainMaterial = new THREE.MeshBasicMaterial({color: 0x800000});
     var terrain = new THREE.Mesh(terrainGeometry, terrainMaterial);
+    terrain.position.y = window.innerHeight;
     scene.add(terrain);
     
     camera.position.z = 5;
