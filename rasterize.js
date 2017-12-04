@@ -17,6 +17,7 @@ function main() {
     var terrainGeometry = new THREE.BoxGeometry(window.innerWidth,0.7,0.5);
     var terrainMaterial = new THREE.MeshBasicMaterial({color: 0x800000});
     var terrain = new THREE.Mesh(terrainGeometry, terrainMaterial);
+    terrain.translate.y += 100;
   
     scene.add(terrain);
     terrain.position.setY(100);
