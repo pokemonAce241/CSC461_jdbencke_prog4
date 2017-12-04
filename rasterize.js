@@ -18,7 +18,7 @@ function initializeScene(){
     
     renderer.setSize(canvasWidth,canvasHeight);
     
-    document.getElementbyId("WebGLCanvas").appendChild(renderer.domElement);
+    document.getElementById("WebGLCanvas").appendChild(renderer.domElement);
     
     scene = new THREE.Scene();
     
