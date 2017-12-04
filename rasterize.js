@@ -19,7 +19,7 @@ function main() {
     var terrain = new THREE.Mesh(terrainGeometry, terrainMaterial);
   
     scene.add(terrain);
-    //terrain.position.setY(window.innerHeight);
+    terrain.position.setY(100);
     
     camera.position.z = 5;
     
