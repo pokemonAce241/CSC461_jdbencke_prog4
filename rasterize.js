@@ -654,7 +654,7 @@ function setupShaders() {
                  colorOut = vec3(1.0,1.0,1.0);
             }
             vec4 texCol = texture2D(uSample, vec2(vTextureCoord.s,vTextureCoord.t));
-            gl_FragColor = vec4(texCol.rgb,texCol.a*uAlpha)*vec4(colorOut, 1.0); 
+            gl_FragColor = vec4(colorOut, 1.0); 
         }
     `;
     
