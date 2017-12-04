@@ -9,6 +9,7 @@ function main() {
 
     var scene = new THREE.Scene();
     var camera = new THREE.PerspectiveCamera(75,window.innerWidth/window.innerHeight,0.1,1000);
+    camera.lookAt(scene.position);
     
     var renderer = new THREE.WebGLRenderer();
     renderer.setSize(window.innerWidth,window.innerHeight);
@@ -17,7 +18,7 @@ function main() {
     var terrainGeometry = new THREE.BoxGeometry(window.innerWidth,0.7,0.5);
     var terrainMaterial = new THREE.MeshBasicMaterial({color: 0x800000});
     var terrain = new THREE.Mesh(terrainGeometry, terrainMaterial);
-    terrain.position.set(1.5,2.0,4.0);
+    terrain.position.set(1.5,0.0,4.0);
   
     scene.add(terrain);
     
