@@ -21,7 +21,7 @@ function main() {
     terrain.position.set(1.5,-5.0,-1.0);
     terrain.rotation.x += 0.2;
     
-    var cityGeometry = new THREE.BoxGeometry(3.00,6.0,0.75);
+    var cityGeometry = new THREE.BoxGeometry(1.5,4.0,0.75);
     var cityMaterial = new THREE.MeshBasicMaterial({color: 0x00BFFF});
     
     var batteryGeometry = new THREE.BoxGeometry(2.5,0.65,0.75);
