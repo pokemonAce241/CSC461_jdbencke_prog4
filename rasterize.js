@@ -18,7 +18,7 @@ function main() {
     var terrainGeometry = new THREE.BoxGeometry(window.innerWidth,0.7,3.0);
     var terrainMaterial = new THREE.MeshBasicMaterial({color: 0x800000});
     var terrain = new THREE.Mesh(terrainGeometry, terrainMaterial);
-    terrain.position.set(1.5,-5.0,-1.0);
+    terrain.position.set(1.5,-6.0,-1.0);
     terrain.rotation.x += 0.2;
     
     var cityGeometry = new THREE.BoxGeometry(1.5,4.0,0.75);
@@ -32,19 +32,19 @@ function main() {
     
     
     var city1 = new THREE.Mesh(cityGeometry,cityMaterial);
-    city1.position.set(-1.0,-4.5,-2.0);
+    city1.position.set(-1.0,-5.5,-2.0);
     var city2 = new THREE.Mesh(cityGeometry,cityMaterial);
-    city2.position.set(5.0,-4.5,-2.0);
+    city2.position.set(5.0,-5.5,-2.0);
     
     var city3 = new THREE.Mesh(cityGeometry,cityMaterial);
-    city3.position.set(-5.0,-4.5,-2.0);
+    city3.position.set(-5.0,-5.5,-2.0);
     var city4 = new THREE.Mesh(cityGeometry,cityMaterial);
-    city4.position.set(9.0,-4.5,-2.0);
+    city4.position.set(9.0,-5.5,-2.0);
     
     var city5 = new THREE.Mesh(cityGeometry,cityMaterial);
-    city5.position.set(-9.0,-4.5,-2.0);
+    city5.position.set(-9.0,-5.5,-2.0);
     var city6 = new THREE.Mesh(cityGeometry,cityMaterial);
-    city6.position.set(13.0,-4.5,-2.0);
+    city6.position.set(13.0,-5.5,-2.0);
     
   
     scene.add(terrain);
