@@ -21,20 +21,20 @@ function main() {
     terrain.position.set(1.5,-5.0,-1.0);
     terrain.rotation.x += 0.2;
     
-    var cityGeometry = new THREE.BoxGeometry(0.3,0.75,0.75);
-    var cityMaterial = new THREE.MeshBasicMaterial({color: 0x00ff00});
+    var cityGeometry = new THREE.BoxGeometry(3.00,6.0,0.75);
+    var cityMaterial = new THREE.MeshBasicMaterial({color: 0x00BFFF});
     
     var batteryGeometry = new THREE.BoxGeometry(2.5,0.65,0.75);
-    var batteryMaterial = new THREE.MeshBasicMaterial({color: 0xff00});
+    var batteryMaterial = new THREE.MeshBasicMaterial({color: 0xFF00});
     
     var battery1 = new THREE.Mesh(batteryGeometry,batteryMaterial);
     battery1.position.set(2.0,-4.5,-2.0);
     
     
     var city1 = new THREE.Mesh(cityGeometry,cityMaterial);
-    city1.position.set(1.0,-4.5,-2.0);
+    city1.position.set(0.0,-4.5,-2.0);
     var city2 = new THREE.Mesh(cityGeometry,cityMaterial);
-    city2.position.set(3.0,-4.5,-2.0);
+    city2.position.set(4.0,-4.5,-2.0);
     
     
   
