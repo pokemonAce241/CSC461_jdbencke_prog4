@@ -98,6 +98,9 @@ function main() {
     scene.add(attackMissle1);
     scene.add(attackMissle2);
     scene.add(attackMissle3);
+    scene.add(attackMissle4);
+    scene.add(attackMissle5);
+    scene.add(attackMissle6);
     
     
     camera.position.z = 10;
