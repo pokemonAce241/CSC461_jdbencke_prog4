@@ -24,11 +24,11 @@ function main() {
     var cityGeometry = new THREE.BoxGeometry(0.3,0.75,0.75);
     var cityMaterial = new THREE.MeshBasicMaterial({color: 0x00ff00});
     
-    var batteryGeometry = new THREE.BoxGeometry(0.5,0.2,0.75);
+    var batteryGeometry = new THREE.BoxGeometry(0.5,0.5,0.75);
     var batteryMaterial = new THREE.MeshBasicMaterial({color: 0xff00});
     
     var battery1 = new THREE.Mesh(batteryGeometry,batteryMaterial);
-    battery1.position.set(2.0,-3.0,-2.0);
+    battery1.position.set(2.0,-4.0,-2.0);
     
     
     var city1 = new THREE.Mesh(cityGeometry,cityMaterial);
