@@ -34,13 +34,22 @@ function main() {
     var attackMissleGeometry = new THREE.SphereGeometry(0.3,4.0,4.0);
     var attackMissleMaterial = new THREE.MeshBasicMaterial({color: 0xFF4500});
     
+    var defenceMissleMaterial = new THREE.MeshBasicMaterial({color: 0x800000});
+    
     var battery1 = new THREE.Mesh(batteryGeometry,batteryMaterial);
     battery1.position.set(1.0,-6.5,-2.0);
+    var defence1 = new THREE.Mesh(attackMissleGeometry,defenceMissleMaterial);
+    defence1.position.set(1.0,-6.0,-2.0);
     
     var battery2 = new THREE.Mesh(batteryGeometry,batteryMaterial);
     battery2.position.set(-16.0,-6.5,-2.0);
+     var defence2 = new THREE.Mesh(attackMissleGeometry,defenceMissleMaterial);
+    defence2.position.set(-16.0,-6.0,-2.0);
+    
     var battery3 = new THREE.Mesh(batteryGeometry,batteryMaterial);
     battery3.position.set(16.0,-6.5,-2.0);
+     var defence3 = new THREE.Mesh(attackMissleGeometry,defenceMissleMaterial);
+    defence3.position.set(16.0,-6.0,-2.0);
     
     
     var city1 = new THREE.Mesh(cityGeometry,cityMaterial);
@@ -89,8 +98,11 @@ function main() {
   
     scene.add(terrain);
     scene.add(battery1);
+    scene.add(defence1);
     scene.add(battery2);
+    scene.add(defence2);
     scene.add(battery3);
+    scene.add(defence3);
     
     scene.add(city1);
     scene.add(city2);
