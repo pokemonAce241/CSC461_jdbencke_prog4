@@ -27,6 +27,9 @@ function main() {
     var batteryGeometry = new THREE.BoxGeometry(2.5,0.65,0.75);
     var batteryMaterial = new THREE.MeshBasicMaterial({color: 0xFF00});
     
+    var attackMissleGeometry = new THREE.SphereGeometry(0.5,1.5,0.5);
+    var attackMissleMaterial = new THREE.MeshBasicMaterial({color: 0xFF4500});
+    
     var battery1 = new THREE.Mesh(batteryGeometry,batteryMaterial);
     battery1.position.set(1.0,-6.5,-2.0);
     
@@ -38,6 +41,10 @@ function main() {
     
     var city1 = new THREE.Mesh(cityGeometry,cityMaterial);
     city1.position.set(-2.0,-6.5,-2.0);
+    
+    var attackMissle1 = new THREE.Mesh(attackMissleGeometry,attackMissleMaterial)
+    attackMissle1.position.set(-2.0,3.0,-2.0);
+    
     var city2 = new THREE.Mesh(cityGeometry,cityMaterial);
     city2.position.set(4.0,-6.5,-2.0);
     
@@ -63,6 +70,8 @@ function main() {
     scene.add(city4);
     scene.add(city5);
     scene.add(city6);
+    
+    scene.add(attackMissle1);
     
     
     camera.position.z = 10;
