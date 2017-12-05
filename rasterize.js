@@ -84,6 +84,8 @@ function main() {
     scene.add(city6);
     
     scene.add(attackMissle1);
+    scene.add(attackMissle2);
+    scene.add(attackMissle3);
     
     
     camera.position.z = 10;
