@@ -34,7 +34,7 @@ function main() {
     var attackMissleGeometry = new THREE.SphereGeometry(0.3,4.0,4.0);
     var attackMissleMaterial = new THREE.MeshBasicMaterial({color: 0xFF4500});
     
-    var defenceMissleMaterial = new THREE.MeshBasicMaterial({color: 0x800000});
+    var defenceMissleMaterial = new THREE.MeshBasicMaterial({color: 0x006400});
     
     var battery1 = new THREE.Mesh(batteryGeometry,batteryMaterial);
     battery1.position.set(1.0,-6.5,-2.0);
