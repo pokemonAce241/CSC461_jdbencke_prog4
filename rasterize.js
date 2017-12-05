@@ -114,12 +114,12 @@ function main() {
         attackMissle5.rotation.y += 0.1;
         attackMissle6.rotation.y += 0.1;
         
-        attackMissle1.position.y += 0.01;
-        attackMissle2.position.y += 0.01;
-        attackMissle3.position.y += 0.01;
-        attackMissle4.position.y += 0.01;
-        attackMissle5.position.y += 0.01;
-        attackMissle6.position.y += 0.01;
+        attackMissle1.position.y -= 0.01;
+        attackMissle2.position.y -= 0.02;
+        attackMissle3.position.y -= 0.015;
+        attackMissle4.position.y -= 0.015;
+        attackMissle5.position.y -= 0.02;
+        attackMissle6.position.y -= 0.015;
         
         
         renderer.render(scene,camera);
