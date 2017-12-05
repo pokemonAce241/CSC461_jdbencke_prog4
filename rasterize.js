@@ -41,6 +41,11 @@ function main() {
     var city4 = new THREE.Mesh(cityGeometry,cityMaterial);
     city4.position.set(9.0,-4.5,-2.0);
     
+    var city5 = new THREE.Mesh(cityGeometry,cityMaterial);
+    city5.position.set(-9.0,-4.5,-2.0);
+    var city6 = new THREE.Mesh(cityGeometry,cityMaterial);
+    city6.position.set(13.0,-4.5,-2.0);
+    
   
     scene.add(terrain);
     scene.add(battery1);
@@ -48,6 +53,8 @@ function main() {
     scene.add(city2);
     scene.add(city3);
     scene.add(city4);
+    scene.add(city5);
+    scene.add(city6);
     
     
     camera.position.z = 10;
