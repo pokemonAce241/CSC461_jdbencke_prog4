@@ -32,9 +32,9 @@ function main() {
     
     
     var city1 = new THREE.Mesh(cityGeometry,cityMaterial);
-    city1.position.set(0.0,-4.5,-2.0);
+    city1.position.set(-1.0,-4.5,-2.0);
     var city2 = new THREE.Mesh(cityGeometry,cityMaterial);
-    city2.position.set(4.0,-4.5,-2.0);
+    city2.position.set(6.0,-4.5,-2.0);
     
     
   
