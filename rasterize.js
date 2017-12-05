@@ -28,7 +28,7 @@ function main() {
     var batteryMaterial = new THREE.MeshBasicMaterial({color: 0xff00});
     
     var battery1 = new THREE.Mesh(batteryGeometry,batteryMaterial);
-    battery1.position.set(2.0,-5.0,-2.0);
+    battery1.position.set(2.0,-3.0,-2.0);
     
     
     var city1 = new THREE.Mesh(cityGeometry,cityMaterial);
