@@ -28,23 +28,23 @@ function main() {
     var batteryMaterial = new THREE.MeshBasicMaterial({color: 0xFF00});
     
     var battery1 = new THREE.Mesh(batteryGeometry,batteryMaterial);
-    battery1.position.set(2.0,-6.5,-2.0);
+    battery1.position.set(1.0,-6.5,-2.0);
     
     
     var city1 = new THREE.Mesh(cityGeometry,cityMaterial);
-    city1.position.set(-1.0,-6.5,-2.0);
+    city1.position.set(-2.0,-6.5,-2.0);
     var city2 = new THREE.Mesh(cityGeometry,cityMaterial);
-    city2.position.set(5.0,-6.5,-2.0);
+    city2.position.set(4.0,-6.5,-2.0);
     
     var city3 = new THREE.Mesh(cityGeometry,cityMaterial);
-    city3.position.set(-5.0,-6.5,-2.0);
+    city3.position.set(-6.0,-6.5,-2.0);
     var city4 = new THREE.Mesh(cityGeometry,cityMaterial);
-    city4.position.set(9.0,-6.5,-2.0);
+    city4.position.set(8.0,-6.5,-2.0);
     
     var city5 = new THREE.Mesh(cityGeometry,cityMaterial);
-    city5.position.set(-9.0,-6.5,-2.0);
+    city5.position.set(-10.0,-6.5,-2.0);
     var city6 = new THREE.Mesh(cityGeometry,cityMaterial);
-    city6.position.set(13.0,-6.5,-2.0);
+    city6.position.set(12.0,-6.5,-2.0);
     
   
     scene.add(terrain);
