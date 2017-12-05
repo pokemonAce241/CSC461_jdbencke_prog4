@@ -46,6 +46,8 @@ function main() {
     scene.add(battery1);
     scene.add(city1);
     scene.add(city2);
+    scene.add(city3);
+    scene.add(city4);
     
     
     camera.position.z = 10;
