@@ -34,8 +34,12 @@ function main() {
     var city1 = new THREE.Mesh(cityGeometry,cityMaterial);
     city1.position.set(-1.0,-4.5,-2.0);
     var city2 = new THREE.Mesh(cityGeometry,cityMaterial);
-    city2.position.set(6.0,-4.5,-2.0);
+    city2.position.set(5.0,-4.5,-2.0);
     
+    var city3 = new THREE.Mesh(cityGeometry,cityMaterial);
+    city3.position.set(-5.0,-4.5,-2.0);
+    var city4 = new THREE.Mesh(cityGeometry,cityMaterial);
+    city4.position.set(9.0,-4.5,-2.0);
     
   
     scene.add(terrain);
