@@ -42,14 +42,26 @@ function main() {
     var city1 = new THREE.Mesh(cityGeometry,cityMaterial);
     city1.position.set(-2.0,-6.5,-2.0);
     
-    var attackMissle1 = new THREE.Mesh(attackMissleGeometry,attackMissleMaterial)
-    attackMissle1.position.set(-2.0,3.0,-2.0);
+    var attackMissle1 = new THREE.Mesh(attackMissleGeometry,attackMissleMaterial);
+    attackMissle1.position.set(-2.0,6.0,-2.0);
+    
+    
     
     var city2 = new THREE.Mesh(cityGeometry,cityMaterial);
     city2.position.set(4.0,-6.5,-2.0);
     
+    var attackMissle2 = new THREE.Mesh(attackMissleGeometry,attackMissleMaterial);
+    attackMissle2.position.set(4.0,6.0,-2.0);
+    
+    
+    
     var city3 = new THREE.Mesh(cityGeometry,cityMaterial);
     city3.position.set(-6.0,-6.5,-2.0);
+    
+    var attackMissle3 = new THREE.Mesh(attackMissleGeometry,attackMissleMaterial);
+    attackMissle3.position.set(-6.0,6.0,-2.0);
+    
+    
     var city4 = new THREE.Mesh(cityGeometry,cityMaterial);
     city4.position.set(8.0,-6.5,-2.0);
     
