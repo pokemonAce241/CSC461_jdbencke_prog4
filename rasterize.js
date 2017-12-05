@@ -30,6 +30,11 @@ function main() {
     var battery1 = new THREE.Mesh(batteryGeometry,batteryMaterial);
     battery1.position.set(1.0,-6.5,-2.0);
     
+    var battery2 = new THREE.Mesh(batteryGeometry,batteryMaterial);
+    battery2.position.set(-9.0,-6.5,-2.0);
+    var battery3 = new THREE.Mesh(batteryGeometry,batteryMaterial);
+    battery3.position.set(15.0,-6.5,-2.0);
+    
     
     var city1 = new THREE.Mesh(cityGeometry,cityMaterial);
     city1.position.set(-2.0,-6.5,-2.0);
@@ -49,6 +54,9 @@ function main() {
   
     scene.add(terrain);
     scene.add(battery1);
+    scene.add(battery2);
+    scene.add(battery3);
+    
     scene.add(city1);
     scene.add(city2);
     scene.add(city3);
