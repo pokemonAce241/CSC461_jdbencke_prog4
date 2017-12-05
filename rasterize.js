@@ -43,7 +43,7 @@ function main() {
     city1.position.set(-2.0,-6.5,-2.0);
     
     var attackMissle1 = new THREE.Mesh(attackMissleGeometry,attackMissleMaterial);
-    attackMissle1.position.set(-2.0,6.0,-2.0);
+    attackMissle1.position.set(-2.0,8.0,-2.0);
     
     
     
@@ -51,7 +51,7 @@ function main() {
     city2.position.set(4.0,-6.5,-2.0);
     
     var attackMissle2 = new THREE.Mesh(attackMissleGeometry,attackMissleMaterial);
-    attackMissle2.position.set(4.0,6.0,-2.0);
+    attackMissle2.position.set(4.0,8.0,-2.0);
     
     
     
@@ -59,16 +59,28 @@ function main() {
     city3.position.set(-6.0,-6.5,-2.0);
     
     var attackMissle3 = new THREE.Mesh(attackMissleGeometry,attackMissleMaterial);
-    attackMissle3.position.set(-6.0,6.0,-2.0);
+    attackMissle3.position.set(-6.0,8.0,-2.0);
     
     
     var city4 = new THREE.Mesh(cityGeometry,cityMaterial);
     city4.position.set(8.0,-6.5,-2.0);
     
+    var attackMissle4 = new THREE.Mesh(attackMissleGeometry,attackMissleMaterial);
+    attackMissle4.position.set(8.0,8.0,-2.0);
+    
+    
     var city5 = new THREE.Mesh(cityGeometry,cityMaterial);
     city5.position.set(-10.0,-6.5,-2.0);
+    
+    var attackMissle5 = new THREE.Mesh(attackMissleGeometry,attackMissleMaterial);
+    attackMissle5.position.set(-10.0,8.0,-2.0);
+    
+    
     var city6 = new THREE.Mesh(cityGeometry,cityMaterial);
     city6.position.set(12.0,-6.5,-2.0);
+    
+    var attackMissle6 = new THREE.Mesh(attackMissleGeometry,attackMissleMaterial);
+    attackMissle6.position.set(12.0,8.0,-2.0);
     
   
     scene.add(terrain);
@@ -93,6 +105,11 @@ function main() {
     var animate = function(){
      requestAnimationFrame(animate); 
         attackMissle1.rotation.y += 0.1;
+        attackMissle2.rotation.y += 0.1;
+        attackMissle3.rotation.y += 0.1;
+        attackMissle4.rotation.y += 0.1;
+        attackMissle5.rotation.y += 0.1;
+        attackMissle6.rotation.y += 0.1;
         
         
         renderer.render(scene,camera);
