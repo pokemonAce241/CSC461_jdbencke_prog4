@@ -31,9 +31,9 @@ function main() {
     battery1.position.set(1.0,-6.5,-2.0);
     
     var battery2 = new THREE.Mesh(batteryGeometry,batteryMaterial);
-    battery2.position.set(-17.0,-6.5,-2.0);
+    battery2.position.set(-16.0,-6.5,-2.0);
     var battery3 = new THREE.Mesh(batteryGeometry,batteryMaterial);
-    battery3.position.set(17.0,-6.5,-2.0);
+    battery3.position.set(16.0,-6.5,-2.0);
     
     
     var city1 = new THREE.Mesh(cityGeometry,cityMaterial);
