@@ -27,7 +27,7 @@ function main() {
     var batteryGeometry = new THREE.BoxGeometry(2.5,0.65,0.75);
     var batteryMaterial = new THREE.MeshBasicMaterial({color: 0xFF00});
     
-    var attackMissleGeometry = new THREE.SphereGeometry(0.5,1.5,0.5);
+    var attackMissleGeometry = new THREE.SphereGeometry(1.0,4.0,4.0);
     var attackMissleMaterial = new THREE.MeshBasicMaterial({color: 0xFF4500});
     
     var battery1 = new THREE.Mesh(batteryGeometry,batteryMaterial);
