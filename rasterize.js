@@ -177,6 +177,8 @@ function main() {
             if(dist > 0){
                target.setLength(dist);
                 defence1.position.add(target);
+                defence1.position.add(target);
+                defence1.position.add(target);
                }
             else{
              launch1 = 0.0;
@@ -190,6 +192,8 @@ function main() {
             var dist = Math.min(target.length(),.01)
             if(dist > 0){
                target.setLength(dist);
+                defence2.position.add(target);
+                defence2.position.add(target);
                 defence2.position.add(target);
                }
             else{
@@ -205,6 +209,8 @@ function main() {
             var dist = Math.min(target.length(),.01)
             if(dist > 0){
                target.setLength(dist);
+                defence3.position.add(target);
+                defence3.position.add(target);
                 defence3.position.add(target);
                }
             else{
