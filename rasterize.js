@@ -173,7 +173,7 @@ function main() {
         if(launch1 == 1.0 ){
            var target = pos.clone();
             target.sub(defence1.position)
-            var dist = Math.min(target.length(),.01)
+            var dist = Math.min(target.length(),.1)
             if(dist > 0){
                target.setLength(dist);
                 defence1.position.add(target);
@@ -187,7 +187,7 @@ function main() {
         if(launch2 == 1.0 ){
            var target = pos.clone();
             target.sub(defence2.position)
-            var dist = Math.min(target.length(),.01)
+            var dist = Math.min(target.length(),.1)
             if(dist > 0){
                target.setLength(dist);
                 defence2.position.add(target);
@@ -202,7 +202,7 @@ function main() {
         if(launch3 == 1.0 ){
            var target = pos.clone();
             target.sub(defence3.position)
-            var dist = Math.min(target.length(),.01)
+            var dist = Math.min(target.length(),.1)
             if(dist > 0){
                target.setLength(dist);
                 defence3.position.add(target);
