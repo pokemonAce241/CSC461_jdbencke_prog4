@@ -175,7 +175,7 @@ function main() {
             target.sub(defence1.position)
             var dist = Math.min(target.length(),.01)
             if(dist > 0){
-               target.setLength(dist);
+               target.setLength(dist*3);
                 defence1.position.add(target);
                }
             else{
@@ -189,7 +189,7 @@ function main() {
             target.sub(defence2.position)
             var dist = Math.min(target.length(),.01)
             if(dist > 0){
-               target.setLength(dist);
+               target.setLength(dist*3);
                 defence2.position.add(target);
                }
             else{
@@ -204,7 +204,7 @@ function main() {
             target.sub(defence3.position)
             var dist = Math.min(target.length(),.01)
             if(dist > 0){
-               target.setLength(dist);
+               target.setLength(dist*3);
                 defence3.position.add(target);
                }
             else{
