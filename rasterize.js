@@ -158,7 +158,7 @@ function main() {
         if(launch == 1.0 ){
            var target = mouse.clone();
             target.sub(defence2.position)
-            var dist = math.min(target.length(),.01)
+            var dist = Math.min(target.length(),.01)
             if(dist > 0){
                target.setLength(dist);
                 defence2.position.add(target);
