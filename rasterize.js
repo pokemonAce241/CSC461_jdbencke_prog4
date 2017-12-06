@@ -161,7 +161,7 @@ function main() {
             var dist = Math.min(target.length(),.01)
             if(dist > 0){
                target.setLength(dist);
-                defence2.position.add(target);
+                defence2.position.add(target*3);
                }
            }
         attackMissle1.rotation.y += 0.1;
