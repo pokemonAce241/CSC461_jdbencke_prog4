@@ -4,7 +4,7 @@
 
 var score = 0;
 
-var mouse = new THREE.Vector3();
+
 
 var launch = 0.0;
 
@@ -36,6 +36,8 @@ function main() {
     var renderer = new THREE.WebGLRenderer();
     renderer.setSize(window.innerWidth,window.innerHeight);
     document.body.appendChild(renderer.domElement);
+    
+    var mouse = new THREE.Vector3();
     
     document.addEventListener('mousedown',onDocumentMouseDown,false);
     
