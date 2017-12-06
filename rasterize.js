@@ -5,7 +5,6 @@
 var score = 0;
 
 
-
 var launch = 0.0;
 
 var detonate = 0.0;
@@ -37,12 +36,18 @@ function main() {
     renderer.setSize(window.innerWidth,window.innerHeight);
     document.body.appendChild(renderer.domElement);
     
-    var mouse = new THREE.Vector3();
+    
+    var pos =  new THREE.Vector3();
     
     document.addEventListener('mousedown',onDocumentMouseDown,false);
     
     function onDocumentMouseDown(event){
-        mouse.set( ( event.clientX / window.innerWidth ) * 2 - 1, -( event.clientY / window.innerHeight ) * 2 + 1, -2.0);
+        var mouse = new THREE.Vector3();
+        mouse.set(( event.clientX / window.innerWidth ) * 2 - 1, -( event.clientY / window.innerHeight ) * 2 + 1, -2.0);
+        mouse.unproject(camera);
+        var dir = mouse.sub(camera.position).normalize;
+        var distance = -(camera.position.z/dir/z);
+        pos = camera.position.clone().add(dir.multiplyScalar(distance));
         launch = 1.0;
     }
         
@@ -156,7 +161,7 @@ function main() {
         
         
         if(launch == 1.0 ){
-           var target = mouse.clone();
+           var target = pos.clone();
             target.sub(defence2.position)
             var dist = Math.min(target.length(),.01)
             if(dist > 0){
