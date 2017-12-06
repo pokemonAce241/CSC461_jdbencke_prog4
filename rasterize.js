@@ -158,10 +158,10 @@ function main() {
         if(launch == 1.0 ){
            var target = mouse.clone();
             target.sub(defence2.position)
-            var dist = Math.min(target.length(),.01);
+            var dist = Math.min(target.length(),.01)
             if(dist > 0){
-                target.setLength(dist);
-                defence2.add(target);
+               target.setLength(dist);
+                defence2.position.add(target);
                }
            }
         attackMissle1.rotation.y += 0.1;
