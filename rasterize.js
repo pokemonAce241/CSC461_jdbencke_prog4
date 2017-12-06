@@ -164,7 +164,7 @@ function main() {
      requestAnimationFrame(animate); 
         
         
-        if(launch == 1.0 ){
+        if(launch1 == 1.0 ){
            var target = pos.clone();
             target.sub(defence2.position)
             var dist = Math.min(target.length(),.01)
@@ -173,7 +173,7 @@ function main() {
                 defence2.position.add(target);
                }
             else{
-             launch = 0.0;
+             launch1 = 0.0;
               defence2.position.set(-16.0,-6.0,-2.0);  
             }
            }
