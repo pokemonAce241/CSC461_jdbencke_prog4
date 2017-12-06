@@ -174,11 +174,10 @@ function main() {
            var target = pos.clone();
             target.sub(defence1.position)
             var dist = Math.min(target.length(),.01)
-            if(defence1.position.x != pos.x && defence1.position.y != pos.y){
+            if(dist > 0){
                target.setLength(dist);
                 defence1.position.add(target);
-                defence1.position.add(target);
-                defence1.position.add(target);
+               
                }
             else{
              launch1 = 0.0;
@@ -190,11 +189,10 @@ function main() {
            var target = pos.clone();
             target.sub(defence2.position)
             var dist = Math.min(target.length(),.01)
-            if(defence2.position.x != pos.x && defence2.position.y != pos.y){
+            if(dist > 0){
                target.setLength(dist);
                 defence2.position.add(target);
-                defence2.position.add(target);
-                defence2.position.add(target);
+                
                }
             else{
              launch2 = 0.0;
@@ -207,11 +205,10 @@ function main() {
            var target = pos.clone();
             target.sub(defence3.position)
             var dist = Math.min(target.length(),.01)
-            if(defence3.position.x != pos.x && defence3.position.y != pos.y){
+            if(dist > 0){
                target.setLength(dist);
                 defence3.position.add(target);
-                defence3.position.add(target);
-                defence3.position.add(target);
+                
                }
             else{
              launch3 = 0.0;
