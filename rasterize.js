@@ -5,7 +5,11 @@
 var score = 0;
 
 
-var launch = 0.0;
+var launch1 = 0.0;
+
+var launch2 = 0.0;
+
+var launch3 = 0.0;
 
 var detonate = 0.0;
 
@@ -48,7 +52,7 @@ function main() {
         var dir = mouse.sub(camera.position).normalize();
         var distance = -(camera.position.z/dir.z);
         pos = camera.position.clone().add(dir.multiplyScalar(distance));
-        launch = 1.0;
+        launch1 = 1.0;
     }
         
     
@@ -168,6 +172,10 @@ function main() {
                target.setLength(dist);
                 defence2.position.add(target);
                }
+            else{
+             launch = 0.0;
+              defence2.position.set(-16.0,-6.0,-2.0);  
+            }
            }
         attackMissle1.rotation.y += 0.1;
         attackMissle2.rotation.y += 0.1;
