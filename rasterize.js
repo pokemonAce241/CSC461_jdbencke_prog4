@@ -45,9 +45,9 @@ function main() {
         var mouse = new THREE.Vector3();
         mouse.set(( event.clientX / window.innerWidth ) * 2 - 1, -( event.clientY / window.innerHeight ) * 2 + 1, -2.0);
         mouse.unproject(camera);
-        var dir = mouse.sub(camera.position).normalize;
+        var dir = mouse.sub(camera.position).normalize();
         var distance = -(camera.position.z/dir.z);
-        pos = camera.position.clone().add( dir.multiplyScalar(distance));
+        pos = camera.position.clone().add(dir.multiplyScalar(distance));
         launch = 1.0;
     }
         
