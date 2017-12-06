@@ -47,7 +47,7 @@ function main() {
         mouse.unproject(camera);
         var dir = mouse.sub(camera.position).normalize;
         var distance = -(camera.position.z/dir.z);
-        pos = camera.position.clone().add(dir.multiplyScalar(distance));
+        pos = camera.position.clone().add( dir.multiplyScalar(distance));
         launch = 1.0;
     }
         
