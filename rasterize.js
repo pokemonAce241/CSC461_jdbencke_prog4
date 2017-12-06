@@ -177,7 +177,6 @@ function main() {
             if(dist > 0){
                target.setLength(dist);
                 defence1.position.add(target);
-               
                }
             else{
              launch1 = 0.0;
@@ -192,7 +191,6 @@ function main() {
             if(dist > 0){
                target.setLength(dist);
                 defence2.position.add(target);
-                
                }
             else{
              launch2 = 0.0;
@@ -208,7 +206,6 @@ function main() {
             if(dist > 0){
                target.setLength(dist);
                 defence3.position.add(target);
-                
                }
             else{
              launch3 = 0.0;
