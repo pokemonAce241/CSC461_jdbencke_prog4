@@ -2,7 +2,25 @@
 
 /* assignment specific globals */
 
+var score = 0;
 
+var mouse = new THREE.Vector3();
+
+var launch = 0.0;
+
+var detonate = 0.0;
+
+var attatk1Status = 1.0;
+
+var attack2Status = 1.0;
+
+var attack3Status = 1.0;
+
+var attack4Status = 1.0;
+
+var attack5Status = 1.0;
+
+var attack6Status = 1.0;
 
 
 function main() {
@@ -18,6 +36,16 @@ function main() {
     var renderer = new THREE.WebGLRenderer();
     renderer.setSize(window.innerWidth,window.innerHeight);
     document.body.appendChild(renderer.domElement);
+    
+    document.addEventListener('mousedown',onDocumentMouseDown,false);
+    
+    function onDocumentMouseDown(event){
+        mouse.set( ( event.clientX / window.innerWidth ) * 2 - 1, -( event.clientY / window.innerHeight ) * 2 + 1, -2.0);
+        launch = 1.0;
+    }
+        
+    
+    
     
     var terrainGeometry = new THREE.BoxGeometry(window.innerWidth,0.7,3.0);
     var terrainMaterial = new THREE.MeshBasicMaterial({color: 0x800000});
@@ -123,6 +151,17 @@ function main() {
     
     var animate = function(){
      requestAnimationFrame(animate); 
+        
+        
+        if(launch == 1.0 ){
+           var target = mouse.clone();
+            target.sub(defence2.position)
+            var dist = math.min(target.length(),.01)
+            if(dist > 0){
+               target.setLength(dist);
+                defence2.position.add(target);
+               }
+           }
         attackMissle1.rotation.y += 0.1;
         attackMissle2.rotation.y += 0.1;
         attackMissle3.rotation.y += 0.1;
