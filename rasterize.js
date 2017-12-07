@@ -224,22 +224,22 @@ function main() {
          attackMissle2.position.y -= 0.002;
         }
         
-        if(attatk3Status == 1.0){
+        if(attack3Status == 1.0){
         attackMissle3.rotation.y += 0.1;
         attackMissle3.position.y -= 0.0025;
            }
            
-        if(attatk4Status == 1.0){
+        if(attack4Status == 1.0){
         attackMissle4.rotation.y += 0.1;
         attackMissle4.position.y -= 0.0012;
         }
         
-        if(attatk5Status == 1.0){
+        if(attack5Status == 1.0){
         attackMissle5.rotation.y += 0.1;
         attackMissle5.position.y -= 0.003;
            }
         
-           if(attatk6Status == 1.0){
+           if(attack6Status == 1.0){
         attackMissle6.rotation.y += 0.1;
         attackMissle6.position.y -= 0.004;
         }
