@@ -212,19 +212,45 @@ function main() {
               defence3.position.set(16.0,-6.0,-2.0);  
             }
            }
-        attackMissle1.rotation.y += 0.1;
-        attackMissle2.rotation.y += 0.1;
-        attackMissle3.rotation.y += 0.1;
-        attackMissle4.rotation.y += 0.1;
-        attackMissle5.rotation.y += 0.1;
-        attackMissle6.rotation.y += 0.1;
+       
         
-        attackMissle1.position.y -= 0.001;
-        attackMissle2.position.y -= 0.002;
+        if(attatk1Status == 1.0){
+        attackMissle1.rotation.y += 0.1;
+         attackMissle1.position.y -= 0.001;
+           }
+        
+           if(attatk2Status == 1.0){
+        attackMissle2.rotation.y += 0.1;
+         attackMissle2.position.y -= 0.002;
+        }
+        
+        if(attatk3Status == 1.0){
+        attackMissle3.rotation.y += 0.1;
         attackMissle3.position.y -= 0.0025;
+           }
+           
+        if(attatk4Status == 1.0){
+        attackMissle4.rotation.y += 0.1;
         attackMissle4.position.y -= 0.0012;
+        }
+        
+        if(attatk5Status == 1.0){
+        attackMissle5.rotation.y += 0.1;
         attackMissle5.position.y -= 0.003;
+           }
+        
+           if(attatk6Status == 1.0){
+        attackMissle6.rotation.y += 0.1;
         attackMissle6.position.y -= 0.004;
+        }
+        
+        
+       
+       
+        
+        
+        
+        
         
         
         renderer.render(scene,camera);
