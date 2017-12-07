@@ -177,7 +177,7 @@ function main() {
             if(dist > 0){
                target.setLength(dist);
                 defence1.position.add(target);
-                if(defence1.center.distanceTo(attackMissle1.center) < defence1.radius){
+                if(defence1.center < defence1.radius){
                  scene.remove(attackMissle1);
                   attatk1Status = 0.0;  
                 }
