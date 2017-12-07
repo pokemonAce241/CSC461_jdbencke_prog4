@@ -219,7 +219,7 @@ function main() {
          attackMissle1.position.y -= 0.001;
            }
         
-           if(attatk2Status == 1.0){
+           if(attack2Status == 1.0){
         attackMissle2.rotation.y += 0.1;
          attackMissle2.position.y -= 0.002;
         }
