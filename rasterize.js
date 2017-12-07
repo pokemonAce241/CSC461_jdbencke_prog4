@@ -253,7 +253,7 @@ function main() {
                 }
                 
                  if(attack2Dist < hit){
-                     score +-= 100;
+                     score += 100;
                     attackMissle2.position.set(4.0,8.0,-2.0);
                      
                 }
@@ -326,7 +326,7 @@ function main() {
                 }
                 
                  if(attack2Dist < hit){
-                     score +-= 100;
+                     score += 100;
                     attackMissle2.position.set(4.0,8.0,-2.0);
                      launch1 = 0.0;
                     defence2.position.set(-16.0,-6.0,-2.0);
@@ -371,7 +371,7 @@ function main() {
                 }
                 
                  if(attack2Dist < hit){
-                     score +-= 100;
+                     score += 100;
                     attackMissle2.position.set(4.0,8.0,-2.0);
                      
                 }
@@ -449,7 +449,7 @@ function main() {
                 }
                 
                  if(attack2Dist < hit){
-                     score +-= 100;
+                     score += 100;
                     attackMissle2.position.set(4.0,8.0,-2.0);
                      launch1 = 0.0;
                     defence3.position.set(16.0,-6.0,-2.0);
@@ -494,7 +494,7 @@ function main() {
                 }
                 
                  if(attack2Dist < hit){
-                     score +-= 100;
+                     score += 100;
                     attackMissle2.position.set(4.0,8.0,-2.0);
                      
                 }
