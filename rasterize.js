@@ -25,6 +25,8 @@ var attack5Status = 1.0;
 
 var attack6Status = 1.0;
 
+var hit = 0.6;
+
 
 function main() {
 
@@ -172,15 +174,31 @@ function main() {
         
         if(launch1 == 1.0 ){
            var target = pos.clone();
-            target.sub(defence1.position)
-            var dist = Math.min(target.length(),.1)
+            target.sub(defence1.position);
+            var dist = Math.min(target.length(),.1);
+            
+            var attack1Pos = attackMissle1.position;
+            var attack1Dist = attack1Pos.distanceTo(defence1.position);
+            
+            var attack2Pos = attackMissle2.position;
+            var attack2Dist = attack2Pos.distanceTo(defence1.position);
+            
+            var attack3Pos = attackMissle3.position;
+            var attack3Dist = attack3Pos.distanceTo(defence1.position);
+            
+            var attack4Pos = attackMissle4.position;
+            var attack4Dist = attack4Pos.distanceTo(defence1.position);
+            
+            var attack5Pos = attackMissle5.position;
+            var attack5Dist = attack5Pos.distanceTo(defence1.position);
+            
+            var attack6Pos = attackMissle6.position;
+            var attack6Dist = attack6Pos.distanceTo(defence1.position);
+            
             if(dist > 0){
                target.setLength(dist);
                 defence1.position.add(target);
-                if(defence1.center < defence1.radius){
-                 scene.remove(attackMissle1);
-                  attatk1Status = 0.0;  
-                }
+                
                }
             else{
              launch1 = 0.0;
@@ -190,8 +208,8 @@ function main() {
         
         if(launch2 == 1.0 ){
            var target = pos.clone();
-            target.sub(defence2.position)
-            var dist = Math.min(target.length(),.1)
+            target.sub(defence2.position);
+            var dist = Math.min(target.length(),.1);
             if(dist > 0){
                target.setLength(dist);
                 defence2.position.add(target);
@@ -205,8 +223,8 @@ function main() {
         
         if(launch3 == 1.0 ){
            var target = pos.clone();
-            target.sub(defence3.position)
-            var dist = Math.min(target.length(),.1)
+            target.sub(defence3.position);
+            var dist = Math.min(target.length(),.1);
             if(dist > 0){
                target.setLength(dist);
                 defence3.position.add(target);
@@ -217,6 +235,9 @@ function main() {
             }
            }
        
+        
+        
+        
         
         if(attatk1Status == 1.0){
         attackMissle1.rotation.y += 0.1;
