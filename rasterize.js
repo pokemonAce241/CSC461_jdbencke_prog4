@@ -187,7 +187,7 @@ function main() {
                 if(attackDefenceDist1 < hit){
                     launch1 = 0.0;
                     defence1.position.set(1.0,-6.0,-2.0);
-                    //attackMissle1.position.set(-2.0,8.0,-2.0);
+                    attackMissle1.position.set(-2.0,8.0,-2.0);
                     attack1Status = 0.0;
                    
                    }
