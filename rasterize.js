@@ -177,7 +177,8 @@ function main() {
             target.sub(defence1.position);
             var dist = Math.min(target.length(),.1);
             
-            var attackDefence1 = attackMissle1.position.sub(defence1.position);
+            var temp = attackMissle1.clone();
+            var attackDefence1 = temp.position.sub(defence1.position);
             var attackDefenceDist1 = attackDefence1.length();
             
             if(dist > 0){
