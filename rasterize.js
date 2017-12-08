@@ -177,7 +177,7 @@ function main() {
             target.sub(defence1.position);
             var dist = Math.min(target.length(),.1);
             
-            var attackDefence1 = attackMissle1.sub(defence1.position);
+            var attackDefence1 = attackMissle1.position.sub(defence1.position);
             var attackDefenceDist1 = attackDefence1.length();
             
             if(dist > 0){
@@ -203,7 +203,7 @@ function main() {
             target.sub(defence2.position);
             var dist = Math.min(target.length(),.1);
             
-            var attackDefence2 = attackMissle1.sub(defence2.position);
+            var attackDefence2 = attackMissle1.position.sub(defence2.position);
             var attackDefenceDist2 = attackDefence2.length();
              
             
@@ -229,7 +229,7 @@ function main() {
             target.sub(defence3.position);
             var dist = Math.min(target.length(),.1);
             
-             var attackDefence3 = attackMissle1.sub(defence3.position);
+             var attackDefence3 = attackMissle1.position.sub(defence3.position);
             var attackDefenceDist3 = attackDefence3.length();
             
             if(dist > 0){
