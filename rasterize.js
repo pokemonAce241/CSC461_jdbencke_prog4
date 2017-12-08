@@ -174,9 +174,15 @@ function main() {
            var target = pos.clone();
             target.sub(defence1.position);
             var dist = Math.min(target.length(),.1);
+            
+            var attackDefenceDist1 = defence1.position.distanceToSquared(attackMissle1.position);
+            
             if(dist > 0){
                target.setLength(dist);
                 defence1.position.add(target);
+                if(attackDefenceDist1 > hit){
+                   attack1Status = 0.0;
+                   }
                 
                }
             else{
@@ -189,9 +195,15 @@ function main() {
            var target = pos.clone();
             target.sub(defence2.position);
             var dist = Math.min(target.length(),.1);
+            
+             var attackDefenceDist2 = defence2.position.distanceToSquared(attackMissle1.position);
+            
             if(dist > 0){
                target.setLength(dist);
                 defence2.position.add(target);
+                if(attackDefenceDist2 > hit){
+                   attack1Status = 0.0;
+                   }
                }
             else{
              launch2 = 0.0;
@@ -204,9 +216,15 @@ function main() {
            var target = pos.clone();
             target.sub(defence3.position);
             var dist = Math.min(target.length(),.1);
+            
+            var attackDefenceDist3 = defence3.position.distanceToSquared(attackMissle1.position);
+            
             if(dist > 0){
                target.setLength(dist);
                 defence3.position.add(target);
+                if(attackDefenceDist3 > hit){
+                   attack1Status = 0.0;
+                   }
                }
             else{
              launch3 = 0.0;
