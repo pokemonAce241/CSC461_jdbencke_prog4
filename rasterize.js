@@ -13,7 +13,7 @@ var launch3 = 0.0;
 
 var detonate = 0.0;
 
-var attatk1Status = 1.0;
+var attack1Status = 1.0;
 
 var attack2Status = 1.0;
 
@@ -245,34 +245,58 @@ function main() {
            }
        
         
-        if(attatk1Status == 1.0){
+        if(attack1Status == 1.0){
         attackMissle1.rotation.y += 0.1;
          attackMissle1.position.y -= 0.001;
+            if(attackMissle1.y < city1.y){
+               attack1Status = 0.0;
+                scene.remove(city1);
+               }
            }
         
            if(attack2Status == 1.0){
         attackMissle2.rotation.y += 0.1;
          attackMissle2.position.y -= 0.002;
+               if(attackMissle2.y < city2.y){
+               attack2Status = 0.0;
+                scene.remove(city2);
+               }
         }
         
         if(attack3Status == 1.0){
         attackMissle3.rotation.y += 0.1;
         attackMissle3.position.y -= 0.0025;
+            if(attackMissle3.y < city3.y){
+               attack3Status = 0.0;
+                scene.remove(city3);
+               }
            }
            
         if(attack4Status == 1.0){
         attackMissle4.rotation.y += 0.1;
         attackMissle4.position.y -= 0.0012;
+            if(attackMissle4.y < city4.y){
+               attack4Status = 0.0;
+                scene.remove(city4);
+               }
         }
         
         if(attack5Status == 1.0){
         attackMissle5.rotation.y += 0.1;
         attackMissle5.position.y -= 0.003;
+            if(attackMissle5.y < city5.y){
+               attack5Status = 0.0;
+                scene.remove(city5);
+               }
            }
         
            if(attack6Status == 1.0){
         attackMissle6.rotation.y += 0.1;
         attackMissle6.position.y -= 0.004;
+               if(attackMissle6.y < city6.y){
+               attack6Status = 0.0;
+                scene.remove(city6);
+               }
         }
         
         
