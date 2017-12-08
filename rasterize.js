@@ -184,7 +184,7 @@ function main() {
                target.setLength(dist);
                 defence1.position.add(target);
                 
-                if(attackDefenceDist < hit){
+                if(attackDefenceDist < (attackMissle1.radius*2)){
                     launch1 = 0.0;
                     defence1.position.set(1.0,-6.0,-2.0);
                     attackMissle1.position.set(-2.0,8.0,-2.0);
@@ -247,7 +247,7 @@ function main() {
         
         if(attack1Status == 1.0){
         attackMissle1.rotation.y += 0.1;
-         attackMissle1.position.y -= 0.01;
+         attackMissle1.position.y -= 0.001;
             if(attackMissle1.position.y < -6.0){
                attack1Status = 0.0;
                 scene.remove(city1);
@@ -256,7 +256,7 @@ function main() {
         
            if(attack2Status == 1.0){
         attackMissle2.rotation.y += 0.1;
-         attackMissle2.position.y -= 0.02;
+         attackMissle2.position.y -= 0.002;
                if(attackMissle2.position.y < -6.0){
                attack2Status = 0.0;
                 scene.remove(city2);
@@ -265,7 +265,7 @@ function main() {
         
         if(attack3Status == 1.0){
         attackMissle3.rotation.y += 0.1;
-        attackMissle3.position.y -= 0.025;
+        attackMissle3.position.y -= 0.0025;
             if(attackMissle3.position.y < -6.0){
                attack3Status = 0.0;
                 scene.remove(city3);
@@ -274,7 +274,7 @@ function main() {
            
         if(attack4Status == 1.0){
         attackMissle4.rotation.y += 0.1;
-        attackMissle4.position.y -= 0.012;
+        attackMissle4.position.y -= 0.0012;
             if(attackMissle4.position.y < -6.0){
                attack4Status = 0.0;
                 scene.remove(city4);
@@ -283,7 +283,7 @@ function main() {
         
         if(attack5Status == 1.0){
         attackMissle5.rotation.y += 0.1;
-        attackMissle5.position.y -= 0.03;
+        attackMissle5.position.y -= 0.003;
             if(attackMissle5.position.y < -6.0){
                attack5Status = 0.0;
                 scene.remove(city5);
@@ -292,7 +292,7 @@ function main() {
         
            if(attack6Status == 1.0){
         attackMissle6.rotation.y += 0.1;
-        attackMissle6.position.y -= 0.04;
+        attackMissle6.position.y -= 0.004;
                if(attackMissle6.position.y < -6.0){
                attack6Status = 0.0;
                 scene.remove(city6);
