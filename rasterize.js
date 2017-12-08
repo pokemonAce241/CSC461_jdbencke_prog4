@@ -211,7 +211,7 @@ function main() {
                 defence2.position.add(target);
                 if(attackDefenceDist < (attackMissle1.radius*2)){
                     launch2 = 0.0;
-                    defence1.position.set(1.0,-6.0,-2.0);
+                    defence2.position.set(-16.0,-6.0,-2.0);
                    attackMissle1.position.set(-2.0,8.0,-2.0);
                     attack1Status = 0.0;
                    }
@@ -236,14 +236,14 @@ function main() {
                 defence3.position.add(target);
                 if(attackDefenceDist < (attackMissle1.radius*2)){
                     launch3 = 0.0;
-                    defence1.position.set(1.0,-6.0,-2.0);
+                    defence3.position.set(16.0,-6.0,-2.0);
                    attackMissle1.position.set(-2.0,8.0,-6.0);
                     attack1Status = 0.0;
                    }
                }
             else{
              launch3 = 0.0;
-              defence3.position.set(16.0,-6.0,-6.0);  
+              defence3.position.set(16.0,-6.0,-2.0);  
             }
            }
        
