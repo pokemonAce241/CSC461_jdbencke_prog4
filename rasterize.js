@@ -180,6 +180,7 @@ function main() {
             var dist = Math.min(target.length(),.1);
             
             var attackDefenceDist1 = defence1.position.distanceToSquared(attackMissle1.position);
+            console.log(attackDefenceDist1);
             
             if(dist > 0){
                target.setLength(dist);
