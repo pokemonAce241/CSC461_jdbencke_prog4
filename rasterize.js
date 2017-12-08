@@ -25,7 +25,7 @@ var attack5Status = 1.0;
 
 var attack6Status = 1.0;
 
-var hit = 0.3;
+var hit = 0.6;
 
 
 function main() {
@@ -187,6 +187,7 @@ function main() {
                 if(attackDefenceDist < hit){
                     launch1 = 0.0;
                     defence1.position.set(1.0,-6.0,-2.0);
+                    attackMissle1.position.set(-2.0,8.0,-2.0);
                    
                    }
                }
@@ -210,7 +211,7 @@ function main() {
                 if(attackDefenceDist < hit){
                     launch2 = 0.0;
                     defence1.position.set(1.0,-6.0,-2.0);
-                   
+                   attackMissle1.position.set(-2.0,8.0,-2.0);
                    }
                }
             else{
@@ -234,7 +235,7 @@ function main() {
                 if(attackDefenceDist < hit){
                     launch3 = 0.0;
                     defence1.position.set(1.0,-6.0,-2.0);
-                   
+                   attackMissle1.position.set(-2.0,8.0,-2.0);
                    }
                }
             else{
