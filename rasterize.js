@@ -177,21 +177,10 @@ function main() {
             target.sub(defence1.position);
             var dist = Math.min(target.length(),.1);
             
-            var temp = attackMissle1.clone();
-            var attackDefence1 = temp.position.sub(defence1.position);
-            var attackDefenceDist1 = attackDefence1.length();
-            
             if(dist > 0){
                target.setLength(dist);
                 defence1.position.add(target);
-                
-                if(attackDefenceDist1 < hit){
-                    launch1 = 0.0;
-                    defence1.position.set(1.0,-6.0,-2.0);
-                    attackMissle1.position.set(-2.0,8.0,-2.0);
-                    attack1Status = 0.0;
-                   
-                   }
+               
                }
             else{
              launch1 = 0.0;
@@ -204,19 +193,11 @@ function main() {
             target.sub(defence2.position);
             var dist = Math.min(target.length(),.1);
             
-            var attackDefence2 = attackMissle1.position.sub(defence2.position);
-            var attackDefenceDist2 = attackDefence2.length();
-             
-            
+  
             if(dist > 0){
                target.setLength(dist);
                 defence2.position.add(target);
-                if(attackDefenceDist2 < hit){
-                    launch2 = 0.0;
-                    defence2.position.set(-16.0,-6.0,-2.0);
-                   attackMissle1.position.set(-2.0,8.0,-2.0);
-                    attack1Status = 0.0;
-                   }
+                
                }
             else{
              launch2 = 0.0;
@@ -230,18 +211,11 @@ function main() {
             target.sub(defence3.position);
             var dist = Math.min(target.length(),.1);
             
-             var attackDefence3 = attackMissle1.position.sub(defence3.position);
-            var attackDefenceDist3 = attackDefence3.length();
-            
+ 
             if(dist > 0){
                target.setLength(dist);
                 defence3.position.add(target);
-                if(attackDefenceDist3 < hit){
-                    launch3 = 0.0;
-                    defence3.position.set(16.0,-6.0,-2.0);
-                   attackMissle1.position.set(-2.0,8.0,-6.0);
-                    attack1Status = 0.0;
-                   }
+               
                }
             else{
              launch3 = 0.0;
