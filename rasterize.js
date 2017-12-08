@@ -25,7 +25,7 @@ var attack5Status = 1.0;
 
 var attack6Status = 1.0;
 
-var hit = 0.6;
+var hit = 0.3;
 
 
 function main() {
