@@ -103,7 +103,7 @@ function main() {
     city1.position.set(-2.0,-6.5,-2.0);
     
     var attackMissle1 = new THREE.Mesh(attackMissleGeometry,attackMissleMaterial);
-    attackMissle1.position.set(-2.0,8.0,-2.0);
+    attackMissle1.position.set(-2.0,16.0,-2.0);
     
     
     
@@ -111,7 +111,7 @@ function main() {
     city2.position.set(4.0,-6.5,-2.0);
     
     var attackMissle2 = new THREE.Mesh(attackMissleGeometry,attackMissleMaterial);
-    attackMissle2.position.set(4.0,8.0,-2.0);
+    attackMissle2.position.set(4.0,20.0,-2.0);
     
     
     
@@ -119,28 +119,28 @@ function main() {
     city3.position.set(-6.0,-6.5,-2.0);
     
     var attackMissle3 = new THREE.Mesh(attackMissleGeometry,attackMissleMaterial);
-    attackMissle3.position.set(-6.0,8.0,-2.0);
+    attackMissle3.position.set(-6.0,30.0,-2.0);
     
     
     var city4 = new THREE.Mesh(cityGeometry,cityMaterial);
     city4.position.set(8.0,-6.5,-2.0);
     
     var attackMissle4 = new THREE.Mesh(attackMissleGeometry,attackMissleMaterial);
-    attackMissle4.position.set(8.0,8.0,-2.0);
+    attackMissle4.position.set(8.0,24.0,-2.0);
     
     
     var city5 = new THREE.Mesh(cityGeometry,cityMaterial);
     city5.position.set(-10.0,-6.5,-2.0);
     
     var attackMissle5 = new THREE.Mesh(attackMissleGeometry,attackMissleMaterial);
-    attackMissle5.position.set(-10.0,8.0,-2.0);
+    attackMissle5.position.set(-10.0,22.0,-2.0);
     
     
     var city6 = new THREE.Mesh(cityGeometry,cityMaterial);
     city6.position.set(12.0,-6.5,-2.0);
     
     var attackMissle6 = new THREE.Mesh(attackMissleGeometry,attackMissleMaterial);
-    attackMissle6.position.set(12.0,8.0,-2.0);
+    attackMissle6.position.set(12.0,35.0,-2.0);
     
   
     scene.add(terrain);
@@ -168,7 +168,6 @@ function main() {
     
     camera.position.z = 10;
     
-    var hit = 2.0;
     
     var animate = function(){
      requestAnimationFrame(animate); 
@@ -180,13 +179,51 @@ function main() {
             var dist = Math.min(target.length(),.1);
             
             var attackDefenceDist1 = defence1.position.distanceToSquared(attackMissle1.position);
-            console.log(attackDefenceDist1);
+            var attackDefenceDist2 = defence1.position.distanceToSquared(attackMissle2.position);
+            var attackDefenceDist3 = defence1.position.distanceToSquared(attackMissle3.position);
+            var attackDefenceDist4 = defence1.position.distanceToSquared(attackMissle4.position);
+            var attackDefenceDist5 = defence1.position.distanceToSquared(attackMissle5.position);
+            var attackDefenceDist6 = defence1.position.distanceToSquared(attackMissle6.position);
+            
             
             if(dist > 0){
                target.setLength(dist);
                 defence1.position.add(target);
                 if(attackDefenceDist1 < 7.0){
-                   attack1Status = 0.0;
+                   score += 150;
+                   attackMissle1.position.set(-2.0,16.0,-2.0); 
+                   launch1 = 0.0;
+                   defence1.position.set(1.0,-6.0,-2.0);
+                   }
+                if(attackDefenceDist2 < 7.0){
+                    score += 150;
+                   attackMissle2.position.set(4.0,20.0,-2.0); 
+                   launch1 = 0.0;
+                   defence1.position.set(1.0,-6.0,-2.0);
+                   }
+                if(attackDefenceDist3 < 7.0){
+                   score += 150;
+                   attackMissle3.position.set(-6.0,30.0,-2.0); 
+                   launch1 = 0.0;
+                   defence1.position.set(1.0,-6.0,-2.0);
+                   }
+                if(attackDefenceDist4 < 7.0){
+                   score += 150;
+                   attackMissle4.position.set(8.0,24.0,-2.0); 
+                   launch1 = 0.0;
+                   defence1.position.set(1.0,-6.0,-2.0);
+                   }
+                if(attackDefenceDist5 < 7.0){
+                   score += 150;
+                   attackMissle5.position.set(-10.0,22.0,-2.0);
+                   launch1 = 0.0;
+                   defence1.position.set(1.0,-6.0,-2.0);
+                   }
+                if(attackDefenceDist6 < 7.0){
+                    score += 150;
+                   attackMissle6.position.set(12.0,35.0,-2.0); 
+                   launch1 = 0.0;
+                   defence1.position.set(1.0,-6.0,-2.0);
                    }
                 
                }
@@ -201,13 +238,51 @@ function main() {
             target.sub(defence2.position);
             var dist = Math.min(target.length(),.1);
             
-             var attackDefenceDist2 = defence2.position.distanceToSquared(attackMissle1.position);
+             var attackDefenceDist1 = defence2.position.distanceToSquared(attackMissle1.position);
+             var attackDefenceDist2 = defence2.position.distanceToSquared(attackMissle2.position);
+            var attackDefenceDist3 = defence2.position.distanceToSquared(attackMissle3.position);
+            var attackDefenceDist4 = defence2.position.distanceToSquared(attackMissle4.position);
+            var attackDefenceDist5 = defence2.position.distanceToSquared(attackMissle5.position);
+            var attackDefenceDist6 = defence2.position.distanceToSquared(attackMissle6.position);
             
             if(dist > 0){
                target.setLength(dist);
                 defence2.position.add(target);
+                if(attackDefenceDist1 < 7.0){
+                   score += 150;
+                   attackMissle1.position.set(-2.0,16.0,-2.0); 
+                   launch2 = 0.0;
+                   defence2.position.set(-16.0,-6.0,-2.0);
+                   }
                 if(attackDefenceDist2 < 7.0){
-                   attack1Status = 0.0;
+                    score += 150;
+                   attackMissle2.position.set(4.0,20.0,-2.0); 
+                   launch2 = 0.0;
+                   defence2.position.set(-16.0,-6.0,-2.0);
+                   }
+                if(attackDefenceDist3 < 7.0){
+                   score += 150;
+                   attackMissle3.position.set(-6.0,30.0,-2.0); 
+                   launch2 = 0.0;
+                   defence2.position.set(-16.0,-6.0,-2.0);
+                   }
+                if(attackDefenceDist4 < 7.0){
+                   score += 150;
+                   attackMissle4.position.set(8.0,24.0,-2.0); 
+                   launch2 = 0.0;
+                   defence2.position.set(-16.0,-6.0,-2.0);
+                   }
+                if(attackDefenceDist5 < 7.0){
+                   score += 150;
+                   attackMissle5.position.set(-10.0,22.0,-2.0);
+                   launch2 = 0.0;
+                   defence2.position.set(-16.0,-6.0,-2.0);
+                   }
+                if(attackDefenceDist6 < 7.0){
+                    score += 150;
+                   attackMissle6.position.set(12.0,35.0,-2.0); 
+                   launch2 = 0.0;
+                   defence2.position.set(-16.0,-6.0,-2.0);
                    }
                }
             else{
@@ -222,13 +297,51 @@ function main() {
             target.sub(defence3.position);
             var dist = Math.min(target.length(),.1);
             
-            var attackDefenceDist3 = defence3.position.distanceToSquared(attackMissle1.position);
+            var attackDefenceDist1 = defence3.position.distanceToSquared(attackMissle1.position);
+            var attackDefenceDist2 = defence3.position.distanceToSquared(attackMissle2.position);
+            var attackDefenceDist3 = defence3.position.distanceToSquared(attackMissle3.position);
+            var attackDefenceDist4 = defence3.position.distanceToSquared(attackMissle4.position);
+            var attackDefenceDist5 = defence3.position.distanceToSquared(attackMissle5.position);
+            var attackDefenceDist6 = defence3.position.distanceToSquared(attackMissle6.position);
             
             if(dist > 0){
                target.setLength(dist);
                 defence3.position.add(target);
+                if(attackDefenceDist1 < 7.0){
+                   score += 150;
+                   attackMissle1.position.set(-2.0,16.0,-2.0); 
+                   launch3 = 0.0;
+                   defence3.position.set(16.0,-6.0,-2.0);
+                   }
+                if(attackDefenceDist2 < 7.0){
+                    score += 150;
+                   attackMissle2.position.set(4.0,20.0,-2.0); 
+                   launch3 = 0.0;
+                   defence3.position.set(16.0,-6.0,-2.0);
+                   }
                 if(attackDefenceDist3 < 7.0){
-                   attack1Status = 0.0;
+                   score += 150;
+                   attackMissle3.position.set(-6.0,30.0,-2.0); 
+                   launch3 = 0.0;
+                   defence3.position.set(16.0,-6.0,-2.0);
+                   }
+                if(attackDefenceDist4 < 7.0){
+                   score += 150;
+                   attackMissle4.position.set(8.0,24.0,-2.0); 
+                   launch3 = 0.0;
+                   defence3.position.set(16.0,-6.0,-2.0);
+                   }
+                if(attackDefenceDist5 < 7.0){
+                   score += 150;
+                   attackMissle5.position.set(-10.0,22.0,-2.0);
+                   launch3 = 0.0;
+                   defence3.position.set(16.0,-6.0,-2.0);
+                   }
+                if(attackDefenceDist6 < 7.0){
+                    score += 150;
+                   attackMissle6.position.set(12.0,35.0,-2.0); 
+                   launch3 = 0.0;
+                   defence3.position.set(16.0,-6.0,-2.0);
                    }
                }
             else{
@@ -240,7 +353,7 @@ function main() {
         
         if(attack1Status == 1.0){
         attackMissle1.rotation.y += 0.1;
-         attackMissle1.position.y -= 0.001;
+         attackMissle1.position.y -= 0.01;
             if(attackMissle1.position.y < -6.0){
                attack1Status = 0.0;
                 scene.remove(city1);
@@ -249,7 +362,7 @@ function main() {
         
            if(attack2Status == 1.0){
         attackMissle2.rotation.y += 0.1;
-         attackMissle2.position.y -= 0.002;
+         attackMissle2.position.y -= 0.02;
                if(attackMissle2.position.y < -6.0){
                attack2Status = 0.0;
                 scene.remove(city2);
@@ -258,7 +371,7 @@ function main() {
         
         if(attack3Status == 1.0){
         attackMissle3.rotation.y += 0.1;
-        attackMissle3.position.y -= 0.0025;
+        attackMissle3.position.y -= 0.025;
             if(attackMissle3.position.y < -6.0){
                attack3Status = 0.0;
                 scene.remove(city3);
@@ -267,7 +380,7 @@ function main() {
            
         if(attack4Status == 1.0){
         attackMissle4.rotation.y += 0.1;
-        attackMissle4.position.y -= 0.0012;
+        attackMissle4.position.y -= 0.012;
             if(attackMissle4.position.y < -6.0){
                attack4Status = 0.0;
                 scene.remove(city4);
@@ -276,7 +389,7 @@ function main() {
         
         if(attack5Status == 1.0){
         attackMissle5.rotation.y += 0.1;
-        attackMissle5.position.y -= 0.003;
+        attackMissle5.position.y -= 0.03;
             if(attackMissle5.position.y < -6.0){
                attack5Status = 0.0;
                 scene.remove(city5);
@@ -285,7 +398,7 @@ function main() {
         
            if(attack6Status == 1.0){
         attackMissle6.rotation.y += 0.1;
-        attackMissle6.position.y -= 0.004;
+        attackMissle6.position.y -= 0.04;
                if(attackMissle6.position.y < -6.0){
                attack6Status = 0.0;
                 scene.remove(city6);
