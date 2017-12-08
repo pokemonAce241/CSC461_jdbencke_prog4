@@ -168,7 +168,7 @@ function main() {
     
     camera.position.z = 10;
     
-    var hit = 1.0;
+    var hit = 2.0;
     
     var animate = function(){
      requestAnimationFrame(animate); 
