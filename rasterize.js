@@ -25,7 +25,7 @@ var attack5Status = 1.0;
 
 var attack6Status = 1.0;
 
-var hit = 0.3;
+
 
 
 function main() {
@@ -167,6 +167,8 @@ function main() {
     
     
     camera.position.z = 10;
+    
+    var hit = defence1.radius + attackMissle1.radius;
     
     var animate = function(){
      requestAnimationFrame(animate); 
