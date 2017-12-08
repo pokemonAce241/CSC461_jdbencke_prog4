@@ -168,7 +168,7 @@ function main() {
     
     camera.position.z = 10;
     
-    var hit = defence1.radius + attackMissle1.radius;
+    var hit = defence1.geometry.radius + attackMissle1.geometry.radius;
     
     var animate = function(){
      requestAnimationFrame(animate); 
