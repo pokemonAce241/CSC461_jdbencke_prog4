@@ -25,8 +25,6 @@ var attack5Status = 1.0;
 
 var attack6Status = 1.0;
 
-var hit = 0.6;
-
 
 function main() {
 
@@ -176,11 +174,10 @@ function main() {
            var target = pos.clone();
             target.sub(defence1.position);
             var dist = Math.min(target.length(),.1);
-            
             if(dist > 0){
                target.setLength(dist);
                 defence1.position.add(target);
-               
+                
                }
             else{
              launch1 = 0.0;
@@ -192,12 +189,9 @@ function main() {
            var target = pos.clone();
             target.sub(defence2.position);
             var dist = Math.min(target.length(),.1);
-            
-  
             if(dist > 0){
                target.setLength(dist);
                 defence2.position.add(target);
-                
                }
             else{
              launch2 = 0.0;
@@ -210,12 +204,9 @@ function main() {
            var target = pos.clone();
             target.sub(defence3.position);
             var dist = Math.min(target.length(),.1);
-            
- 
             if(dist > 0){
                target.setLength(dist);
                 defence3.position.add(target);
-               
                }
             else{
              launch3 = 0.0;
@@ -278,14 +269,7 @@ function main() {
                }
         }
         
-        
-       
-       
-        
-        
-        
-        
-        
+
         
         renderer.render(scene,camera);
     }
