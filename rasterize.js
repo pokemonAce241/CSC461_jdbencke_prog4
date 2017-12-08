@@ -177,23 +177,23 @@ function main() {
             target.sub(defence1.position);
             var dist = Math.min(target.length(),.1);
             
-            var attack1Pos = attackMissle1.position;
-            var attack1Dist = attack1Pos.distanceTo(defence1.position);
+            var attack1Pos = attackMissle1.center;
+            var attack1Dist = attack1Pos.distanceTo(defence1.center);
             
-            var attack2Pos = attackMissle2.position;
-            var attack2Dist = attack2Pos.distanceTo(defence1.position);
+            var attack2Pos = attackMissle2.center;
+            var attack2Dist = attack2Pos.distanceTo(defence1.center);
             
-            var attack3Pos = attackMissle3.position;
-            var attack3Dist = attack3Pos.distanceTo(defence1.position);
+            var attack3Pos = attackMissle3.center;
+            var attack3Dist = attack3Pos.distanceTo(defence1.center);
             
-            var attack4Pos = attackMissle4.position;
-            var attack4Dist = attack4Pos.distanceTo(defence1.position);
+            var attack4Pos = attackMissle4.center;
+            var attack4Dist = attack4Pos.distanceTo(defence1.center);
             
-            var attack5Pos = attackMissle5.position;
-            var attack5Dist = attack5Pos.distanceTo(defence1.position);
+            var attack5Pos = attackMissle5.center;
+            var attack5Dist = attack5Pos.distanceTo(defence1.center);
             
-            var attack6Pos = attackMissle6.position;
-            var attack6Dist = attack6Pos.distanceTo(defence1.position);
+            var attack6Pos = attackMissle6.center;
+            var attack6Dist = attack6Pos.distanceTo(defence1.center);
             
             if(dist > 0){
                target.setLength(dist);
