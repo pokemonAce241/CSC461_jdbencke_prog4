@@ -185,7 +185,7 @@ function main() {
             if(dist > 0){
                target.setLength(dist);
                 defence1.position.add(target);
-                if(attackDefenceDist1 < 6.0){
+                if(attackDefenceDist1 < 6.5){
                    attack1Status = 0.0;
                    }
                 
@@ -206,7 +206,7 @@ function main() {
             if(dist > 0){
                target.setLength(dist);
                 defence2.position.add(target);
-                if(attackDefenceDist2 < 6.0){
+                if(attackDefenceDist2 < 6.5){
                    attack1Status = 0.0;
                    }
                }
@@ -227,7 +227,7 @@ function main() {
             if(dist > 0){
                target.setLength(dist);
                 defence3.position.add(target);
-                if(attackDefenceDist3 < 6.0){
+                if(attackDefenceDist3 < 6.5){
                    attack1Status = 0.0;
                    }
                }
