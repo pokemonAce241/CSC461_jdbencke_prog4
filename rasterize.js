@@ -189,37 +189,37 @@ function main() {
             if(dist > 0){
                target.setLength(dist);
                 defence1.position.add(target);
-                if(attackDefenceDist1 < 7.0){
+                if(attackDefenceDist1 < 6.0){
                    score += 150;
                    attackMissle1.position.set(-2.0,16.0,-2.0); 
                    launch1 = 0.0;
                    defence1.position.set(1.0,-6.0,-2.0);
                    }
-                if(attackDefenceDist2 < 7.0){
+                if(attackDefenceDist2 < 6.0){
                     score += 150;
                    attackMissle2.position.set(4.0,20.0,-2.0); 
                    launch1 = 0.0;
                    defence1.position.set(1.0,-6.0,-2.0);
                    }
-                if(attackDefenceDist3 < 7.0){
+                if(attackDefenceDist3 < 6.0){
                    score += 150;
                    attackMissle3.position.set(-6.0,30.0,-2.0); 
                    launch1 = 0.0;
                    defence1.position.set(1.0,-6.0,-2.0);
                    }
-                if(attackDefenceDist4 < 7.0){
+                if(attackDefenceDist4 < 6.0){
                    score += 150;
                    attackMissle4.position.set(8.0,24.0,-2.0); 
                    launch1 = 0.0;
                    defence1.position.set(1.0,-6.0,-2.0);
                    }
-                if(attackDefenceDist5 < 7.0){
+                if(attackDefenceDist5 < 6.0){
                    score += 150;
                    attackMissle5.position.set(-10.0,22.0,-2.0);
                    launch1 = 0.0;
                    defence1.position.set(1.0,-6.0,-2.0);
                    }
-                if(attackDefenceDist6 < 7.0){
+                if(attackDefenceDist6 < 6.0){
                     score += 150;
                    attackMissle6.position.set(12.0,35.0,-2.0); 
                    launch1 = 0.0;
@@ -248,37 +248,37 @@ function main() {
             if(dist > 0){
                target.setLength(dist);
                 defence2.position.add(target);
-                if(attackDefenceDist1 < 7.0){
+                if(attackDefenceDist1 < 6.0){
                    score += 150;
                    attackMissle1.position.set(-2.0,16.0,-2.0); 
                    launch2 = 0.0;
                    defence2.position.set(-16.0,-6.0,-2.0);
                    }
-                if(attackDefenceDist2 < 7.0){
+                if(attackDefenceDist2 < 6.0){
                     score += 150;
                    attackMissle2.position.set(4.0,20.0,-2.0); 
                    launch2 = 0.0;
                    defence2.position.set(-16.0,-6.0,-2.0);
                    }
-                if(attackDefenceDist3 < 7.0){
+                if(attackDefenceDist3 < 6.0){
                    score += 150;
                    attackMissle3.position.set(-6.0,30.0,-2.0); 
                    launch2 = 0.0;
                    defence2.position.set(-16.0,-6.0,-2.0);
                    }
-                if(attackDefenceDist4 < 7.0){
+                if(attackDefenceDist4 < 6.0){
                    score += 150;
                    attackMissle4.position.set(8.0,24.0,-2.0); 
                    launch2 = 0.0;
                    defence2.position.set(-16.0,-6.0,-2.0);
                    }
-                if(attackDefenceDist5 < 7.0){
+                if(attackDefenceDist5 < 6.0){
                    score += 150;
                    attackMissle5.position.set(-10.0,22.0,-2.0);
                    launch2 = 0.0;
                    defence2.position.set(-16.0,-6.0,-2.0);
                    }
-                if(attackDefenceDist6 < 7.0){
+                if(attackDefenceDist6 < 6.0){
                     score += 150;
                    attackMissle6.position.set(12.0,35.0,-2.0); 
                    launch2 = 0.0;
@@ -307,37 +307,37 @@ function main() {
             if(dist > 0){
                target.setLength(dist);
                 defence3.position.add(target);
-                if(attackDefenceDist1 < 7.0){
+                if(attackDefenceDist1 < 6.0){
                    score += 150;
                    attackMissle1.position.set(-2.0,16.0,-2.0); 
                    launch3 = 0.0;
                    defence3.position.set(16.0,-6.0,-2.0);
                    }
-                if(attackDefenceDist2 < 7.0){
+                if(attackDefenceDist2 < 6.0){
                     score += 150;
                    attackMissle2.position.set(4.0,20.0,-2.0); 
                    launch3 = 0.0;
                    defence3.position.set(16.0,-6.0,-2.0);
                    }
-                if(attackDefenceDist3 < 7.0){
+                if(attackDefenceDist3 < 6.0){
                    score += 150;
                    attackMissle3.position.set(-6.0,30.0,-2.0); 
                    launch3 = 0.0;
                    defence3.position.set(16.0,-6.0,-2.0);
                    }
-                if(attackDefenceDist4 < 7.0){
+                if(attackDefenceDist4 < 6.0){
                    score += 150;
                    attackMissle4.position.set(8.0,24.0,-2.0); 
                    launch3 = 0.0;
                    defence3.position.set(16.0,-6.0,-2.0);
                    }
-                if(attackDefenceDist5 < 7.0){
+                if(attackDefenceDist5 < 6.0){
                    score += 150;
                    attackMissle5.position.set(-10.0,22.0,-2.0);
                    launch3 = 0.0;
                    defence3.position.set(16.0,-6.0,-2.0);
                    }
-                if(attackDefenceDist6 < 7.0){
+                if(attackDefenceDist6 < 6.0){
                     score += 150;
                    attackMissle6.position.set(12.0,35.0,-2.0); 
                    launch3 = 0.0;
