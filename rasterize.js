@@ -41,7 +41,17 @@ function main() {
     renderer.setSize(window.innerWidth,window.innerHeight);
     document.body.appendChild(renderer.domElement);
     
+    var backgroundTexture = new THREE.TextureLoader().load('https://github.ncsu.edu/jdbencke/CSC461_jdbencke_prog4/blob/master/Sky.jpg');
+    var backgroundMesh = new THREE.Mesh(
+        new THREE.PlaneGeometry(2,2,0),
+        new THREE.MeshBasicMaterial({
+            map: backgroundTexture
+        }));
     
+    var backgroundScene = new THREE.Scene();
+    var backgroundCamera = new THREE.Camera();
+    backgroundScene.add(backgroundCamera);
+    backgroundScene.add(backgroundMesh);
     
     
     
