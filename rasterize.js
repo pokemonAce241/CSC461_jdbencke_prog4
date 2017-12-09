@@ -43,21 +43,6 @@ function main() {
     
     
     
-    var canvas = document.createElement('canvas');
-canvas.width = 100;
-canvas.height = 50;
-var context = canvas.getContext('2d');
-context.fillText("Score: "+score, 8, 20);
-
-var scoreTexture = new THREE.Texture(canvas);
-scoreTexture.needsUpdate = true;
-var sprite = new THREE.Sprite({
-    map: scoreTexture,
-    transparent: true,
-    useSceenCoordinates:false
-    });
-sprite.position.set(-5,5,-10);
-scene.add(sprite);
     
     
     
