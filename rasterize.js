@@ -411,7 +411,7 @@ function main() {
         }
         
 
-        
+        renderer.render(backgroundScene,backgroundCamera);
         renderer.render(scene,camera);
     }
     
