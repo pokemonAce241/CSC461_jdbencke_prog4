@@ -410,7 +410,8 @@ function main() {
                }
         }
         
-
+        renderer.autoClear = false;
+        renderer.clear();
         renderer.render(backgroundScene,backgroundCamera);
         renderer.render(scene,camera);
     }
