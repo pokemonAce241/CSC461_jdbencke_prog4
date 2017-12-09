@@ -4,7 +4,6 @@
 
 var score = 0;
 
-
 var launch1 = 0.0;
 
 var launch2 = 0.0;
@@ -41,6 +40,27 @@ function main() {
     var renderer = new THREE.WebGLRenderer();
     renderer.setSize(window.innerWidth,window.innerHeight);
     document.body.appendChild(renderer.domElement);
+    
+    
+    
+    var canvas = document.createElement('canvas');
+canvas.width = 100;
+canvas.height = 50;
+var context = canvas.getContext('2d');
+context.fillText("Score: "+score, 8, 20);
+
+var scoreTexture = new THREE.Texture(canvas);
+scoreTexture.needsUpdate = true;
+var sprite = new THREE.Sprite({
+    map: scoreTexture,
+    transparent: true,
+    useSceenCoordinates:false
+    });
+sprite.position.set(-5,5,-10);
+scene.add(sprite);
+    
+    
+    
     
     
     var pos =  new THREE.Vector3();
