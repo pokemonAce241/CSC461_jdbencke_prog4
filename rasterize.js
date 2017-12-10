@@ -13,7 +13,7 @@ var launch3 = 0.0;
 
 
 var attack1Status = 1.0;
-var attackClock1 = new THREE.Clock(false);
+var attackClock1 = new THREE.Clock();
 
 var attack2Status = 1.0;
 var attackClock2 = new THREE.Clock(false);
