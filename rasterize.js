@@ -13,22 +13,22 @@ var launch3 = 0.0;
 
 
 var attack1Status = 1.0;
-var attackClock1 = new THREE.clock(false);
+var attackClock1 = new THREE.Clock(false);
 
 var attack2Status = 1.0;
-var attackClock2 = new THREE.clock(false);
+var attackClock2 = new THREE.Clock(false);
 
 var attack3Status = 1.0;
-var attackClock3 = new THREE.clock(false);
+var attackClock3 = new THREE.Clock(false);
 
 var attack4Status = 1.0;
-var attackClock4 = new THREE.clock(false);
+var attackClock4 = new THREE.Clock(false);
 
 var attack5Status = 1.0;
-var attackClock5 = new THREE.clock(false);
+var attackClock5 = new THREE.Clock(false);
 
 var attack6Status = 1.0;
-var attackClock6 = new THREE.clock(false);
+var attackClock6 = new THREE.Clock(false);
 
 
 var defenceExplosionStatus1 = 0.0;
@@ -173,7 +173,7 @@ function main() {
     
     var city1 = new THREE.Mesh(cityGeometry,cityMaterial);
     city1.position.set(-2.0,-6.5,-2.0);
-    var cityExplosion1 = THREE.Mesh(explosionGeometry,explosionMaterial);
+    var cityExplosion1 = new THREE.Mesh(explosionGeometry,explosionMaterial);
     cityExplosion1.position.set(10.0,10.0,10.0);
     
     var attackMissle1 = new THREE.Mesh(attackMissleGeometry,attackMissleMaterial);
@@ -186,7 +186,7 @@ function main() {
     
     var city2 = new THREE.Mesh(cityGeometry,cityMaterial);
     city2.position.set(4.0,-6.5,-2.0);
-    var cityExplosion2 = THREE.Mesh(explosionGeometry,explosionMaterial);
+    var cityExplosion2 = new THREE.Mesh(explosionGeometry,explosionMaterial);
     cityExplosion2.position.set(10.0,10.0,10.0);
     
     var attackMissle2 = new THREE.Mesh(attackMissleGeometry,attackMissleMaterial);
@@ -199,7 +199,7 @@ function main() {
     
     var city3 = new THREE.Mesh(cityGeometry,cityMaterial);
     city3.position.set(-6.0,-6.5,-2.0);
-    var cityExplosion3 = THREE.Mesh(explosionGeometry,explosionMaterial);
+    var cityExplosion3 = new THREE.Mesh(explosionGeometry,explosionMaterial);
     cityExplosion3.position.set(10.0,10.0,10.0);
     
     var attackMissle3 = new THREE.Mesh(attackMissleGeometry,attackMissleMaterial);
@@ -211,7 +211,7 @@ function main() {
     
     var city4 = new THREE.Mesh(cityGeometry,cityMaterial);
     city4.position.set(8.0,-6.5,-2.0);
-    var cityExplosion4 = THREE.Mesh(explosionGeometry,explosionMaterial);
+    var cityExplosion4 = new THREE.Mesh(explosionGeometry,explosionMaterial);
     cityExplosion4.position.set(10.0,10.0,10.0);
     
     var attackMissle4 = new THREE.Mesh(attackMissleGeometry,attackMissleMaterial);
@@ -223,7 +223,7 @@ function main() {
     
     var city5 = new THREE.Mesh(cityGeometry,cityMaterial);
     city5.position.set(-10.0,-6.5,-2.0);
-    var cityExplosion5 = THREE.Mesh(explosionGeometry,explosionMaterial);
+    var cityExplosion5 = new THREE.Mesh(explosionGeometry,explosionMaterial);
     cityExplosion5.position.set(10.0,10.0,10.0);
     
     var attackMissle5 = new THREE.Mesh(attackMissleGeometry,attackMissleMaterial);
@@ -235,7 +235,7 @@ function main() {
     
     var city6 = new THREE.Mesh(cityGeometry,cityMaterial);
     city6.position.set(12.0,-6.5,-2.0);
-    var cityExplosion6 = THREE.Mesh(explosionGeometry,explosionMaterial);
+    var cityExplosion6 = new THREE.Mesh(explosionGeometry,explosionMaterial);
     cityExplosion6.position.set(10.0,10.0,10.0);
     
     var attackMissle6 = new THREE.Mesh(attackMissleGeometry,attackMissleMaterial);
