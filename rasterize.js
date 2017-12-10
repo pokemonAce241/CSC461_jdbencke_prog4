@@ -161,7 +161,7 @@ function main() {
     
     var explosionGeometry = new THREE.SphereGeometry(0.6,4.0,4.0);
     var attackExplosionGeometry = new THREE.SphereGeometry(1.2,4.0,4.0);
-    var explosionMaterial = new THREE.MeshBasicMaterial({color: 0xFF0000});
+    var explosionMaterial = new THREE.MeshBasicMaterial({color: 0x800000});
     
     var defenceMissleMaterial = new THREE.MeshBasicMaterial({color: 0x006400});
     
