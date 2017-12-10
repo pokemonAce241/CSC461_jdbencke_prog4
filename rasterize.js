@@ -160,7 +160,7 @@ function main() {
     var attackMissleMaterial = new THREE.MeshBasicMaterial({color: 0xFF4500});
     
     var explosionGeometry = new THREE.SphereGeometry(0.6,4.0,4.0);
-    var attackExplosionGeometry = new THREE.SphereGeometry(0.4,4.0,4.0);
+    var attackExplosionGeometry = new THREE.SphereGeometry(1.2,4.0,4.0);
     var explosionMaterial = new THREE.MeshBasicMaterial({color: 0xFF0000});
     
     var defenceMissleMaterial = new THREE.MeshBasicMaterial({color: 0x006400});
@@ -488,21 +488,21 @@ function main() {
             var attackDefenceExplosionDist1 = attackMissle1.position.distanceToSquared(defenceExplosion1.position);
             var attackDefenceExplosionDist2 = attackMissle1.position.distanceToSquared(defenceExplosion2.position);
             var attackDefenceExplosionDist3 = attackMissle1.position.distanceToSquared(defenceExplosion3.position);
-               if(attackDefenceExplosionDist1 < 12){
+               if(attackDefenceExplosionDist1 < 10){
                    score += 150;
                    attackMissle1.position.set(-2.0,16.0,-2.0);
                    attackExplosion1.position.set(attackMissle1.position.x,attackMissle1.position.y,attackMissle1.position.z);
                 attackClock1.start();
                 attackExplosionStatus1 = 1.0;
                   }
-               if(attackDefenceExplosionDist2 < 12){
+               if(attackDefenceExplosionDist2 < 10){
                    score += 150;
                    attackMissle1.position.set(-2.0,16.0,-2.0);
                    attackExplosion1.position.set(attackMissle1.position.x,attackMissle1.position.y,attackMissle1.position.z);
                 attackClock1.start();
                 attackExplosionStatus1 = 1.0;
                   }
-               if(attackDefenceExplosionDist3 < 12){
+               if(attackDefenceExplosionDist3 < 10){
                    score += 150;
                    attackMissle1.position.set(-2.0,16.0,-2.0);
                    attackExplosion1.position.set(attackMissle1.position.x,attackMissle1.position.y,attackMissle1.position.z);
@@ -534,14 +534,14 @@ function main() {
                 attackClock2.start();
                 attackExplosionStatus2 = 1.0;
                   }
-               if(attackDefenceExplosionDist2 < 12){
+               if(attackDefenceExplosionDist2 < 10){
                    score += 150;
                    attackMissle2.position.set(4.0,20.0,-2.0);
                    attackExplosion2.position.set(attackMissle2.position.x,attackMissle2.position.y,attackMissle2.position.z);
                 attackClock2.start();
                 attackExplosionStatus2 = 1.0;
                   }
-               if(attackDefenceExplosionDist3 < 12){
+               if(attackDefenceExplosionDist3 < 10){
                    score += 150;
                   attackMissle2.position.set(4.0,20.0,-2.0);
                    attackExplosion2.position.set(attackMissle2.position.x,attackMissle2.position.y,attackMissle2.position.z);
@@ -566,21 +566,21 @@ function main() {
           var attackDefenceExplosionDist1 = attackMissle3.position.distanceToSquared(defenceExplosion1.position);
             var attackDefenceExplosionDist2 = attackMissle3.position.distanceToSquared(defenceExplosion2.position);
             var attackDefenceExplosionDist3 = attackMissle3.position.distanceToSquared(defenceExplosion3.position);
-               if(attackDefenceExplosionDist1 < 12){
+               if(attackDefenceExplosionDist1 < 10){
                    score += 150;
                    attackMissle3.position.set(-6.0,30.0,-2.0);
                    attackExplosion3.position.set(attackMissle3.position.x,attackMissle3.position.y,attackMissle3.position.z);
                 attackClock3.start();
                 attackExplosionStatus3 = 1.0;
                   }
-               if(attackDefenceExplosionDist2 < 12){
+               if(attackDefenceExplosionDist2 < 10){
                    score += 150;
                    attackMissle3.position.set(-6.0,30.0,-2.0);
                    attackExplosion3.position.set(attackMissle3.position.x,attackMissle3.position.y,attackMissle3.position.z);
                 attackClock3.start();
                 attackExplosionStatus3 = 1.0;
                   }
-               if(attackDefenceExplosionDist3 < 12){
+               if(attackDefenceExplosionDist3 < 10){
                    score += 150;
                   attackMissle3.position.set(-6.0,30.0,-2.0);
                    attackExplosion3.position.set(attackMissle3.position.x,attackMissle3.position.y,attackMissle3.position.z);
@@ -606,21 +606,21 @@ function main() {
              var attackDefenceExplosionDist1 = attackMissle4.position.distanceToSquared(defenceExplosion1.position);
             var attackDefenceExplosionDist2 = attackMissle4.position.distanceToSquared(defenceExplosion2.position);
             var attackDefenceExplosionDist3 = attackMissle4.position.distanceToSquared(defenceExplosion3.position);
-               if(attackDefenceExplosionDist1 < 12){
+               if(attackDefenceExplosionDist1 < 10){
                    score += 150;
                    attackMissle4.position.set(8.0,24.0,-2.0);
                    attackExplosion4.position.set(attackMissle4.position.x,attackMissle4.position.y,attackMissle4.position.z);
                 attackClock4.start();
                 attackExplosionStatus4 = 1.0;
                   }
-               if(attackDefenceExplosionDist2 < 12){
+               if(attackDefenceExplosionDist2 < 10){
                    score += 150;
                    attackMissle4.position.set(8.0,24.0,-2.0);
                    attackExplosion4.position.set(attackMissle4.position.x,attackMissle4.position.y,attackMissle4.position.z);
                 attackClock4.start();
                 attackExplosionStatus4 = 1.0;
                   }
-               if(attackDefenceExplosionDist3 < 12){
+               if(attackDefenceExplosionDist3 < 10){
                    score += 150;
                   attackMissle4.position.set(8.0,24.0,-2.0);
                    attackExplosion4.position.set(attackMissle4.position.x,attackMissle4.position.y,attackMissle4.position.z);
@@ -645,21 +645,21 @@ function main() {
              var attackDefenceExplosionDist1 = attackMissle5.position.distanceToSquared(defenceExplosion1.position);
             var attackDefenceExplosionDist2 = attackMissle5.position.distanceToSquared(defenceExplosion2.position);
             var attackDefenceExplosionDist3 = attackMissle5.position.distanceToSquared(defenceExplosion3.position);
-               if(attackDefenceExplosionDist1 < 12){
+               if(attackDefenceExplosionDist1 < 10){
                    score += 150;
                    attackMissle5.position.set(-10.0,22.0,-2.0);
                    attackExplosion5.position.set(attackMissle5.position.x,attackMissle5.position.y,attackMissle5.position.z);
                 attackClock5.start();
                 attackExplosionStatus5 = 1.0;
                   }
-               if(attackDefenceExplosionDist2 < 12){
+               if(attackDefenceExplosionDist2 < 10){
                    score += 150;
                    attackMissle5.position.set(-10.0,22.0,-2.0);
                    attackExplosion5.position.set(attackMissle5.position.x,attackMissle5.position.y,attackMissle5.position.z);
                 attackClock5.start();
                 attackExplosionStatus5 = 1.0;
                   }
-               if(attackDefenceExplosionDist3 < 12){
+               if(attackDefenceExplosionDist3 < 10){
                    score += 150;
                   attackMissle5.position.set(-10.0,22.0,-2.0);
                    attackExplosion5.position.set(attackMissle5.position.x,attackMissle5.position.y,attackMissle5.position.z);
@@ -685,21 +685,21 @@ function main() {
             var attackDefenceExplosionDist1 = attackMissle6.position.distanceToSquared(defenceExplosion1.position);
             var attackDefenceExplosionDist2 = attackMissle6.position.distanceToSquared(defenceExplosion2.position);
             var attackDefenceExplosionDist3 = attackMissle6.position.distanceToSquared(defenceExplosion3.position);
-               if(attackDefenceExplosionDist1 < 12){
+               if(attackDefenceExplosionDist1 < 10){
                    score += 150;
                    attackMissle6.position.set(12.0,35.0,-2.0);
                    attackExplosion6.position.set(attackMissle6.position.x,attackMissle6.position.y,attackMissle6.position.z);
                 attackClock6.start();
                 attackExplosionStatus6 = 1.0;
                   }
-               if(attackDefenceExplosionDist2 < 12){
+               if(attackDefenceExplosionDist2 < 10){
                    score += 150;
                    attackMissle6.position.set(12.0,35.0,-2.0);
                    attackExplosion6.position.set(attackMissle6.position.x,attackMissle6.position.y,attackMissle6.position.z);
                 attackClock6.start();
                 attackExplosionStatus6 = 1.0;
                   }
-               if(attackDefenceExplosionDist3 < 12){
+               if(attackDefenceExplosionDist3 < 10){
                    score += 150;
                    attackMissle6.position.set(12.0,35.0,-2.0);
                    attackExplosion6.position.set(attackMissle6.position.x,attackMissle6.position.y,attackMissle6.position.z);
