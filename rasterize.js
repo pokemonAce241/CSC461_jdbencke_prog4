@@ -262,7 +262,7 @@ function main() {
     
     
     
-    var text = document.createElement('score: ' + score);
+    var text = document.createElement(score);
     text.style.position = 'absolute';
     text.style.width = 100;
     text.style.height = 100;
