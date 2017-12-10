@@ -58,21 +58,21 @@ var cityExplosionStatus5 = 0.0;
 var cityExplosionStatus6 = 0.0;
 
 
-var missleExplosionStatus1 = 0.0;
+var attackExplosionStatus1 = 0.0;
 
-var missleExplosionStatus2 = 0.0;
-
-
-var missleExplosionStatus3 = 0.0;
+var attackExplosionStatus2 = 0.0;
 
 
-var missleExplosionStatus4 = 0.0;
+var attackExplosionStatus3 = 0.0;
 
 
-var missleExplosionStatus5 = 0.0;
+var attackExplosionStatus4 = 0.0;
 
 
-var missleExplosionStatus6 = 0.0;
+var attackExplosionStatus5 = 0.0;
+
+
+var attackExplosionStatus6 = 0.0;
 
 
 
