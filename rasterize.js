@@ -485,6 +485,9 @@ function main() {
         attackMissle1.rotation.y += 0.1;
          attackMissle1.position.y -= 0.01;
             if(attackMissle1.position.y < -6.0){
+                cityExplosion1.position.set(attackMissle1.position.x,attackMissle1.position.y,attackMissle1.position.z);
+                cityClock1.start();
+                cityExplosionStatus1 = 1.0;
                attackMissle1.position.set(12.0,35.0,-2.0);
                 attack1Status = 0.0;
                 scene.remove(city1);
@@ -495,6 +498,9 @@ function main() {
         attackMissle2.rotation.y += 0.1;
          attackMissle2.position.y -= 0.02;
                if(attackMissle2.position.y < -6.0){
+                   cityExplosion2.position.set(attackMissle2.position.x,attackMissle2.position.y,attackMissle2.position.z);
+                cityClock2.start();
+                cityExplosionStatus2 = 1.0;
                attackMissle2.position.set(12.0,35.0,-2.0);
                 attack2Status = 0.0;
                 scene.remove(city2);
@@ -505,6 +511,9 @@ function main() {
         attackMissle3.rotation.y += 0.1;
         attackMissle3.position.y -= 0.025;
             if(attackMissle3.position.y < -6.0){
+                cityExplosion3.position.set(attackMissle3.position.x,attackMissle3.position.y,attackMissle3.position.z);
+                cityClock3.start();
+                cityExplosionStatus3 = 1.0;
                 attackMissle3.position.set(12.0,35.0,-2.0);
                attack3Status = 0.0;
                 scene.remove(city3);
@@ -515,6 +524,9 @@ function main() {
         attackMissle4.rotation.y += 0.1;
         attackMissle4.position.y -= 0.012;
             if(attackMissle4.position.y < -6.0){
+                cityExplosion4.position.set(attackMissle4.position.x,attackMissle4.position.y,attackMissle4.position.z);
+                cityClock4.start();
+                cityExplosionStatus4 = 1.0;
                 attackMissle4.position.set(12.0,35.0,-2.0);
                attack4Status = 0.0;
                 scene.remove(city4);
@@ -525,6 +537,9 @@ function main() {
         attackMissle5.rotation.y += 0.1;
         attackMissle5.position.y -= 0.03;
             if(attackMissle5.position.y < -6.0){
+                cityExplosion5.position.set(attackMissle5.position.x,attackMissle5.position.y,attackMissle5.position.z);
+                cityClock5.start();
+                cityExplosionStatus5 = 1.0;
                 attackMissle5.position.set(12.0,35.0,-2.0);
                attack5Status = 0.0;
                 scene.remove(city5);
@@ -535,6 +550,9 @@ function main() {
         attackMissle6.rotation.y += 0.1;
         attackMissle6.position.y -= 0.04;
                if(attackMissle6.position.y < -6.0){
+                   cityExplosion6.position.set(attackMissle6.position.x,attackMissle6.position.y,attackMissle6.position.z);
+                cityClock6.start();
+                cityExplosionStatus6 = 1.0;
                attackMissle6.position.set(12.0,35.0,-2.0);
                attack6Status = 0.0;
                 scene.remove(city6);
@@ -568,6 +586,61 @@ function main() {
              defenceExplosionStatus3 = 0.0
              defenceClock3.stop();
              defenceExplosion3.position.set(10.0,10.0,10.0);
+            
+            }
+        }
+        
+        
+        if(cityExplosionStatus1 == 1.0){
+         if(cityClock1.getElapsedTime() > 0.5){
+             cityExplosionStatus1 = 0.0
+             cityClock1.stop();
+             cityExplosion1.position.set(10.0,10.0,10.0);
+            
+            }
+        }
+        
+        if(cityExplosionStatus2 == 1.0){
+         if(cityClock2.getElapsedTime() > 0.5){
+             cityExplosionStatus2 = 0.0
+             cityClock2.stop();
+             cityExplosion2.position.set(10.0,10.0,10.0);
+            
+            }
+        }
+        
+        if(cityExplosionStatus3 == 1.0){
+         if(cityClock3.getElapsedTime() > 0.5){
+             cityExplosionStatus3 = 0.0
+             cityClock3.stop();
+             cityExplosion3.position.set(10.0,10.0,10.0);
+            
+            }
+        }
+        
+        if(cityExplosionStatus4 == 1.0){
+         if(cityClock4.getElapsedTime() > 0.5){
+             cityExplosionStatus4 = 0.0
+             cityClock4.stop();
+             cityExplosion4.position.set(10.0,10.0,10.0);
+            
+            }
+        }
+        
+        if(cityExplosionStatus5 == 1.0){
+         if(cityClock5.getElapsedTime() > 0.5){
+             cityExplosionStatus5 = 0.0
+             cityClock5.stop();
+             cityExplosion5.position.set(10.0,10.0,10.0);
+            
+            }
+        }
+        
+        if(cityExplosionStatus6 == 1.0){
+         if(cityClock6.getElapsedTime() > 0.5){
+             cityExplosionStatus6 = 0.0
+             cityClock6.stop();
+             cityExplosion6.position.set(10.0,10.0,10.0);
             
             }
         }
