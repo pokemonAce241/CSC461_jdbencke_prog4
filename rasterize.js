@@ -262,16 +262,7 @@ function main() {
     
     
     
-    var text = document.createElement("span");
-    text.setAttribute("class","sr-only");
-    text.textContent = "Score: " + score;
-    text.style.position = 'absolute';
-    text.style.width = 100;
-    text.style.height = 100;
-    text.style.backgroundColor = "purple";
-    text.style.top = 200;
-    text.style.left = 200;
-    document.body.appendChild(text);
+    
     
     
   
@@ -320,6 +311,16 @@ function main() {
     
     var animate = function(){
      requestAnimationFrame(animate); 
+        var text = document.createElement("span");
+    text.setAttribute("class","sr-only");
+    text.textContent = "Score: " + score;
+    text.style.position = 'absolute';
+    text.style.width = 300;
+    text.style.height = 300;
+    text.style.backgroundColor = "purple";
+    text.style.top = 0;
+    text.style.left = 0;
+    document.body.appendChild(text);
         
         
         if(launch1 == 1.0 ){
