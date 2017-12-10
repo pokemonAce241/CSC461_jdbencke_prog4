@@ -13,70 +13,67 @@ var launch3 = 0.0;
 
 
 var attack1Status = 1.0;
-var attackClock1 = new THREE.Clock();
+
 
 var attack2Status = 1.0;
-var attackClock2 = new THREE.Clock(false);
+
 
 var attack3Status = 1.0;
-var attackClock3 = new THREE.Clock(false);
+
 
 var attack4Status = 1.0;
-var attackClock4 = new THREE.Clock(false);
+
 
 var attack5Status = 1.0;
-var attackClock5 = new THREE.Clock(false);
+
 
 var attack6Status = 1.0;
-var attackClock6 = new THREE.Clock(false);
+
 
 
 var defenceExplosionStatus1 = 0.0;
-var defenceClock1 = new THREE.Clock(false);
+
 
 var defenceExplosionStatus2 = 0.0;
-var defenceClock2 = new THREE.Clock(false);
+
 
 var defenceExplosionStatus3 = 0.0;
-var defenceClock3 = new THREE.Clock(false);
+
 
 
 var cityExplosionStatus1 = 0.0;
-var cityClock1 = new THREE.Clock(false);
+
 
 var cityExplosionStatus2 = 0.0;
-var cityClock2 = new THREE.Clock(false);
 
 var cityExplosionStatus3 = 0.0;
-var cityClock3 = new THREE.Clock(false);
+
 
 var cityExplosionStatus4 = 0.0;
-var cityClock4 = new THREE.Clock(false);
+
 
 var cityExplosionStatus5 = 0.0;
-var cityClock5 = new THREE.Clock(false);
+
 
 var cityExplosionStatus6 = 0.0;
-var cityClock6 = new THREE.Clock(false);
 
 
 var missleExplosionStatus1 = 0.0;
-var attackClock1 = new THREE.Clock(false);
 
 var missleExplosionStatus2 = 0.0;
-var attackClock2 = new THREE.Clock(false);
+
 
 var missleExplosionStatus3 = 0.0;
-var attackClock3 = new THREE.Clock(false);
+
 
 var missleExplosionStatus4 = 0.0;
-var attackClock4 = new THREE.Clock(false);
+
 
 var missleExplosionStatus5 = 0.0;
-var attackClock5 = new THREE.Clock(false);
+
 
 var missleExplosionStatus6 = 0.0;
-var attackClock6 = new THREE.Clock(false);
+
 
 
 
@@ -100,6 +97,25 @@ function main() {
     scene.background = backgroundTexture;
     
     
+    var attackClock1 = new THREE.Clock(false);
+    var attackClock2 = new THREE.Clock(false);
+    var attackClock3 = new THREE.Clock(false);
+    var attackClock4 = new THREE.Clock(false);
+    var attackClock5 = new THREE.Clock(false);
+    var attackClock6 = new THREE.Clock(false);
+    
+    var defenceClock1 = new THREE.Clock(false);
+    var defenceClock2 = new THREE.Clock(false);
+    var defenceClock3 = new THREE.Clock(false);
+    
+    var cityClock1 = new THREE.Clock(false);
+    var cityClock2 = new THREE.Clock(false);
+    var cityClock3 = new THREE.Clock(false);
+    var cityClock4 = new THREE.Clock(false);
+    var cityClock5 = new THREE.Clock(false);
+    var cityClock6 = new THREE.Clock(false);
+
+
     
     
     
