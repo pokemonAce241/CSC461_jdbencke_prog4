@@ -262,7 +262,9 @@ function main() {
     
     
     
-    var text = document.createElement(score);
+    var text = document.createElement("span");
+    text.setAttribute("class","sr-only");
+    text.textContent = "Score: " + score;
     text.style.position = 'absolute';
     text.style.width = 100;
     text.style.height = 100;
