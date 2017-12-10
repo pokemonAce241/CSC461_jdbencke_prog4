@@ -262,16 +262,16 @@ function main() {
     
     
     
-    var sprite = new THREE.TextSprite({
-        textSize: 10,
-        texture: {
-            text: 'score:' + score,
-            fontFamily: 'Arial, Helvetica, sans-serif',
-        },
-        material: {color: 0x4B0082},
-    });
+    var text = document.createElement('score: ' + score);
+    text.style.position = 'absolute';
+    text.style.width = 100;
+    text.style.height = 100;
+    text.style.backgroundColor = "purple";
+    text.style.top = 200;
+    text.style.left = 200;
+    document.body.appendChild(text);
     
-    scene.add(sprite);
+    
   
     scene.add(terrain);
     scene.add(battery1);
