@@ -546,7 +546,7 @@ function main() {
         
         
         if(defenceExplosionStatus1 == 1.0){
-         if(defenceClock1.getElapsedTime() > 1){
+         if(defenceClock1.getElapsedTime() > 0.5){
              defenceExplosionStatus1 = 0.0
              defenceClock1.stop();
              defenceExplosion1.position.set(10.0,10.0,10.0);
@@ -555,7 +555,7 @@ function main() {
         }
         
         if(defenceExplosionStatus2 == 1.0){
-         if(defenceClock2.getElapsedTime() > 1){
+         if(defenceClock2.getElapsedTime() > 0.5){
              defenceExplosionStatus2 = 0.0
              defenceClock2.stop();
              defenceExplosion2.position.set(10.0,10.0,10.0);
@@ -564,7 +564,7 @@ function main() {
         }
         
         if(defenceExplosionStatus3 == 1.0){
-         if(defenceClock3.getElapsedTime() > 1){
+         if(defenceClock3.getElapsedTime() > 0.5){
              defenceExplosionStatus3 = 0.0
              defenceClock3.stop();
              defenceExplosion3.position.set(10.0,10.0,10.0);
