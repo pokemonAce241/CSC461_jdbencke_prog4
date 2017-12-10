@@ -42,16 +42,8 @@ function main() {
     document.body.appendChild(renderer.domElement);
     
     var backgroundTexture = new THREE.TextureLoader().load('https://i.imgur.com/Q2rNai5.png');
-    var backgroundMesh = new THREE.Mesh(
-        new THREE.PlaneGeometry(2,2,0),
-        new THREE.MeshBasicMaterial({
-            map: backgroundTexture
-        }));
+    scene.background = backgroundTexture;
     
-    var backgroundScene = new THREE.Scene();
-    var backgroundCamera = new THREE.Camera();
-    backgroundScene.add(backgroundCamera);
-    backgroundScene.add(backgroundMesh);
     
     
     
@@ -410,9 +402,7 @@ function main() {
                }
         }
         
-        renderer.autoClear = false;
-        renderer.clear();
-        renderer.render(backgroundScene,backgroundCamera);
+        
         renderer.render(scene,camera);
     }
     
