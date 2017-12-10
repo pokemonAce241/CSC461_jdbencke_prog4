@@ -260,6 +260,18 @@ function main() {
     var attackExplosion6 = new THREE.Mesh(attackExplosionGeometry,explosionMaterial);
     attackExplosion6.position.set(10.0,10.0,10.0);
     
+    
+    
+    var sprite = new THREE.TextSprite({
+        textSize: 10,
+        texture: {
+            text: 'score:' + score,
+            fontFamily: 'Arial, Helvetica, sans-serif',
+        },
+        material: {color: 0x4B0082},
+    });
+    
+    scene.add(sprite);
   
     scene.add(terrain);
     scene.add(battery1);
