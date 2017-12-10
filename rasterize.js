@@ -13,22 +13,22 @@ var launch3 = 0.0;
 
 
 var attack1Status = 1.0;
-var attackClock1 = new THREE.Clock(false);
+var attackClock1 = new THREE.clock(false);
 
 var attack2Status = 1.0;
-var attackClock2 = new THREE.Clock(false);
+var attackClock2 = new THREE.clock(false);
 
 var attack3Status = 1.0;
-var attackClock3 = new THREE.Clock(false);
+var attackClock3 = new THREE.clock(false);
 
 var attack4Status = 1.0;
-var attackClock4 = new THREE.Clock(false);
+var attackClock4 = new THREE.clock(false);
 
 var attack5Status = 1.0;
-var attackClock5 = new THREE.Clock(false);
+var attackClock5 = new THREE.clock(false);
 
 var attack6Status = 1.0;
-var attackClock6 = new THREE.Clock(false);
+var attackClock6 = new THREE.clock(false);
 
 
 var defenceExplosionStatus1 = 0.0;
@@ -144,7 +144,7 @@ function main() {
     var attackMissleMaterial = new THREE.MeshBasicMaterial({color: 0xFF4500});
     
     var explosionGeometry = new THREE.SphereGeometry(0.6,4.0,4.0);
-    var attackExplosionGeometry = new THREE.SpereGeometry(0.4,4.0,4.0);
+    var attackExplosionGeometry = new THREE.SphereGeometry(0.4,4.0,4.0);
     var explosionMaterial = new THREE.MeshBasicMaterial({color: 0xFF0000});
     
     var defenceMissleMaterial = new THREE.MeshBasicMaterial({color: 0x006400});
